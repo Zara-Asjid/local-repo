@@ -15,6 +15,7 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.work.WorkManager
 import com.example.mvvm_application.util.extension.hide
 import com.example.mvvm_application.util.extension.show
@@ -58,6 +59,7 @@ class MainActivity: BaseActivity(),OnClickListener   {
     val homeFragment= HomeFragmentNew()
     val contactsFragment= ContactFragment()
     val helpFragment= HelpFragment()
+    val settingsFragmentTesting= SettingsFragmentTesting()
     val settingsFragment= SettingsFragment()
     private var doubleBackToExitPressedOnce = false
     private var backPressedTime: Long = 0
@@ -101,14 +103,14 @@ class MainActivity: BaseActivity(),OnClickListener   {
 
         //  setCurrentFragment(loginFragment)
 
-        if(intent.extras!=null){
+        if(intent.extras != null){
             val b_FromSettings = intent.extras!!.getBoolean("b_FromSettings")
             if(b_FromSettings){
-                /*  setCurrentFragment(settingsFragment)
-                  binding.bottomNavigationView.selectedItemId = R.id.navigation_settings;*/
+           setCurrentFragment(settingsFragmentTesting)
+                  binding.bottomNavigationView.selectedItemId = R.id.navigation_settings;
 
-                setCurrentFragment(homeFragment)
-                binding.bottomNavigationView.selectedItemId = R.id.navigation_home;
+//                setCurrentFragment(homeFragment)
+//                binding.bottomNavigationView.selectedItemId = R.id.navigation_home;
             }
 
             else  if (intent != null && intent.getStringExtra("navigate_to") == "home_fragment") {
