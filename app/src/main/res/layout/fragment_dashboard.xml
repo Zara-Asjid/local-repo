@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/l_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/default_bg"
+                android:orientation="horizontal"
+                android:weightSum="2.25"
+                tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                    android:id="@+id/rl_from_date"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:background="@drawable/calendar_small" />
+
+                    <TextView
+                        android:id="@+id/txt_from_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/robotocondensed_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_to_date"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:background="@drawable/calendar_small" />
+
+                    <TextView
+                        android:id="@+id/txt_to_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/robotocondensed_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/iv_search_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/search" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ir.mahozad.android.PieChart
+
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:visibility="invisible"
+                app:labelType="none"
+                app:legendArrangement="horizontal"
+                app:legendBoxAlignment="center"
+                app:legendBoxBorderStatus="disabled"
+                app:legendBoxPadding="25dp"
+                app:legendPosition="bottom"
+                app:legendStatus="enabled"
+                app:legendsAlignment="center"
+                app:legendsColor="@color/black"
+                app:legendsMargin="12dp"
+                app:legendsPercentageColor="@color/black"
+                app:legendsPercentageSize="12sp"
+                app:legendsPercentageStatus="disabled"
+                app:legendsSize="10sp"
+                app:legendsTitleAlignment="center"
+                app:legendsTitleSize="14sp"
+                app:outsideLabelsMargin="13dp"
+
+                />
+
+<!--
+                        <ir.mahozad.android.PieChart
+                            android:id="@+id/pieChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:visibility="visible"
+                            app:centerBackgroundColor="#faf"
+                            app:centerBackgroundStatus="disabled"
+                            app:labelType="none"
+                            app:labelsColor="@color/black"
+                            android:layout_gravity="center"
+                            app:labelsSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:legendArrangement="horizontal"
+                            app:legendBoxAlignment="center"
+                            app:legendBoxBorderStatus="disabled"
+                            app:legendBoxPadding="25dp"
+                            app:legendPosition="bottom"
+                            app:legendStatus="enabled"
+                            app:legendsAlignment="center"
+                            app:legendsColor="@color/black"
+                            app:legendsMargin="12dp"
+                            app:legendsPercentageColor="@color/black"
+                            app:legendsPercentageSize="12sp"
+                            app:legendsPercentageStatus="disabled"
+                            app:legendsSize="10sp"
+                            app:legendsTitleAlignment="center"
+                            app:legendsTitleSize="14sp"
+                            app:outsideLabelsMargin="13dp" />
+-->
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotocondensed_regular"
+                android:text="@string/details_txt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_400sdp"
+                android:padding="@dimen/_5sdp"
+                android:scrollbars="none" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

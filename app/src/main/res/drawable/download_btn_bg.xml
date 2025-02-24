@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#FF8800"/> <!-- Set the color you want -->
+            <!-- You can also customize other attributes like corner radius, stroke, etc. -->
+        </shape>
+    </item>
+    <!-- Default background -->
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF"/> <!-- Set the default color you want -->
+            <!-- You can also customize other attributes here -->
+        </shape>
+    </item>
+</selector>

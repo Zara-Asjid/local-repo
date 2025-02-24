@@ -1,0 +1,43 @@
+pluginManagement {
+
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://jitpack.io'
+        }
+        maven { url "https://jcenter.bintray.com" }
+
+//Needed for com.microsoft.device.display:display-mask library
+        maven {
+            url 'https://pkgs.dev.azure.com/MicrosoftDeviceSDK/DuoSDK-Public/_packaging/Duo-SDK-Feed/maven/v1'
+            name 'Duo-SDK-Feed'
+        }
+        gradlePluginPortal()
+
+        /*  flatDir {
+              dirs 'libs'
+          }*/
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        maven { url 'https://jitpack.io' }
+        maven { url "https://jcenter.bintray.com" }
+
+        mavenCentral()
+        maven {
+            url 'https://pkgs.dev.azure.com/MicrosoftDeviceSDK/DuoSDK-Public/_packaging/Duo-SDK-Feed/maven/v1'
+            name 'Duo-SDK-Feed'
+        }
+    }
+}
+
+
+
+
+rootProject.name = "TawajudPremiumPlus(NewFeatured)"
+include ':app'

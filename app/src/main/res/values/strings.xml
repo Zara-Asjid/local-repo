@@ -1,0 +1,456 @@
+<resources>
+    <string name="app_name">Tawajud Premium Plus</string>
+
+
+    <string name="base_url">https://sgi.software/SAIT_RegistrationService/GeneralService.asmx</string>
+    <!--    <string name="base_url">http://104.238.125.92/UserRegister/GeneralService.asmx</string>-->
+    <!--http://104.238.125.92/Userregister/GeneralService.asmx-->
+    <!--http://192.168.10.14/UserRegister/GeneralService.asmx-->
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyD9mkUzYbstlL_5bEkiwdeIASqfoNh1jfE</string>
+
+
+    <string name="no_internet_connection">No internet connection</string>
+<!--
+    <string name="network_failure">Network Failure</string>
+-->
+    <string name="connection_timeout">Connection timeout</string>
+
+
+    <string name="conversion_error">Conversion Error</string>
+    <string name="loc_per_denied">Location permission denied!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="change_base_url">Change Base URL</string>
+
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="title_help">Help</string>
+    <string name="title_contact">Contact Us</string>
+    <string name="break_out">Break Out</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="fragment_title_employee_request">Employee Requests</string>
+    <string name="fragment_title_emp_anouncemnt">Employee Announcements</string>
+    <string name="fragment_title_emp_perm">Employee Permissions</string>
+    <string name="Calendar">Calendar</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="action_sign_in">SIGN IN</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_username">User name must be atleast four characters</string>
+    <string name="error_fields_required">Fields are required</string>
+    <string name="logout">Logout</string>
+    <string name="about_us">About Us</string>
+    <string name="changeable_base_url">Base URL</string>
+    <string name="enable_face_recognition">Enable Face Login</string>
+
+    <string name="face_login">FACE LOGIN</string>
+    <string name="pending">Pending</string>
+    <string name="reason">Reason</string>
+
+    <string name="home">Home</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="remmember_me">Remember me</string>
+    <string name="or">OR</string>
+    <string name="touch_to_login">Touch To Login</string>
+    <string name="submit">Submit</string>
+    <string name="registerd_text">Please enter registered email, so we can personalize your Application Home</string>
+    <string name="welcome">Welcome</string>
+    <string name="date_time">Date time</string>
+    <string name="attendance">Attendance</string>
+    <string name="self_service">Self Service</string>
+    <string name="employee_request">Employee Request</string>
+    <string name="reports">Reports</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="employee_profile">Employee Profile</string>
+
+    <string name="fingerprint_message">Confirm fingerprint to continue</string>
+    <string name="in">IN</string>
+    <string name="out">Out</string>
+    <string name="employee_no">Employee No</string>
+    <string name="employee_card_no">Employee Card No</string>
+    <string name="user_id">User ID</string>
+    <string name="role">Role</string>
+    <string name="manager">Manager</string>
+    <string name="schedule">Schedule</string>
+    <string name="entity_name">Entity Name</string>
+    <string name="join_date">Join Date</string>
+    <string name="grade">Grade</string>
+    <string name="admin">Admin</string>
+    <string name="okay">Okay</string>
+    <string name="packagename">Package</string>
+    <string name="release_no">Release No</string>
+    <string name="license_start_date">License Start Date</string>
+    <string name="users_allowed">Users Allowed</string>
+    <string name="users_registered">Users Registered</string>
+    <string name="domain_name">Domain Name</string>
+    <string name="admin_email">Admin Email</string>
+    <string name="admin_mobile">Admin Mobile</string>
+    <string name="register">Register</string>
+    <string name="total_delay_early_out">Total Delay &amp; Early Out</string>
+    <string name="ss_approved_by_manager">Approved By Manager</string>
+    <string name="ss_approved_by_hr">Approved By Human Resource</string>
+    <string name="ss_rejected_by_manager">Rejected by Manager</string>
+    <string name="ss_rejected_by_hr">Rejected By Human Resource</string>
+    <string name="ss_approved_by_gm">Approved By General Manager</string>
+    <string name="ss_rejected_by_gm">Rejected By General Manager</string>
+    <string name="ss_auto_approved">Automatic Approved</string>
+    <string name="ss_approved_by_1st_manager">Approved By 1st Manager</string>
+    <string name="ss_deleted">Deleted</string>
+    <string name="ss_permission_converted_to_leave">Permission Converted To Leave</string>
+    <string name="ss_approved_by_2nd_manager">Approved By 2nd Manager</string>
+    <string name="ss_rejected_by_2nd_manager">Rejected By 2nd Manager</string>
+    <string name="error_server_key">Server not responded</string>
+    <array name="request_type">
+        <item>Please select Request Type</item>
+        <item>Permission Requests</item>
+        <item>Leave Requests</item>
+    </array>
+
+
+    <array name="select">
+        <item>Please select</item>
+
+    </array>
+    <string name="employee_list">Employee List</string>
+    <string name="h_Leaves">Leaves</string>
+    <string name="h_Permissions">Permissions</string>
+    <string name="h_Nursing_Permission">Nursing Permission</string>
+    <string name="h_Study_Permission">Study Permission</string>
+    <string name="h_Holiday">Holidays</string>
+    <string name="h_Absent">Absent</string>
+    <string name="h_Violations">Violations</string>
+    <string name="h_Rest_Day">Rest Day</string>
+    <string name="over_time_request">Over Time Request</string>
+    <string name="manual_entry_request">Manual Entry Request</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="rejected_by_manager">Rejected by Manager</string>
+    <string name="permission_request">Permission Request</string>
+    <string name="emp_permission">Permission :</string>
+    <string name="emp_to_date">To Date :</string>
+    <string name="emp_from_time">From Time :</string>
+    <string name="status">Status</string>
+    <string name="emp_status">Remarks :</string>
+    <string name="date">Date</string>
+    <string name="new_cnfrm_pswrd_error">New and Confirm Password must be same</string>
+    <string name="pawrd_icorrect">Entered the wrong password</string>
+
+    <string name="enter_remarks">Please enter remarks</string>
+    <string name="title">Title</string>
+    <string name="cancel_small">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="dialog_msg">Are You Sure Do You Want To Approve ?</string>
+    <string name="dialog_btn_yes">Yes</string>
+    <string name="employee_profiles">Employee Profiles</string>
+    <string name="approved">Approved</string>
+    <string name="to_time">To Time</string>
+    <string name="from_time">From Time</string>
+    <string name="emp_date">Date :</string>
+    <string name="emp_leave">Leave :</string>
+    <string name="enter_valid_password_by_finger">To enable login by Finger please enter valid password</string>
+    <string name="password_hint">Password</string>
+    <string name="register_email_txt">Please enter your email to register</string>
+    <string name="time_and_attendance_txt">Every day counts!</string>
+    <string name="register_email_edit_txt">10000@smartai.dev</string>
+    <string name="user_name_hint_txt">Username</string>
+    <string name="in_btn_txt">IN</string>
+    <string name="out_btn_txt">OUT</string>
+    <string name="no_time_txt">--:--</string>
+    <string name="not_available_txt">Not Available</string>
+    <string name="last_trasaction_txt">Last Transaction</string>
+    <string name="you_are_in_txt">First In</string>
+    <string name="you_are_out_txt">Last Out</string>
+
+    <string name="exp_out_txt">Exp. Out</string>
+    <string name="work_mode_txt">Work Mode</string>
+    <string name="location_txt">Location</string>
+    <string name="distance_txt">Distance:</string>
+    <string name="attendance_txt">Attendance</string>
+    <string name="self_service_txt">Self Services</string>
+    <string name="employee_requests_txt">Employee \nRequests</string>
+    <string name="summary_txt">Summary</string>
+    <string name="calender_txt">Calendar</string>
+    <string name="dashboard_txt">Dashboard</string>
+    <string name="reports_txt">Reports</string>
+    <string name="sunrise_time_txt">07:01</string>
+    <string name="sunset_time_txt">18:12</string>
+    <string name="delay_title_txt">You have a Delay Today !</string>
+    <string name="violation_time_txt">09:00 AM - 09:20 AM</string>
+    <string name="duration_home_txt">Duration :</string>
+    <string name="duration_time_txt">20 minutes</string>
+    <string name="request_manual_entry_btn_txt">Request Manual Entry</string>
+    <string name="request_permission_btn_txt">Request Permission</string>
+    <string name="you_have_no_violations_txt">YOU HAVE NO VIOLATIONS</string>
+    <string name="your_are_punctual_txt">YOUR ARE PUNCTUAL</string>
+    <string name="thank_you_txt">THANK YOU</string>
+    <string name="day_txt">Wednesday</string>
+    <string name="semicolon_txt">:</string>
+    <string name="timer_txt">Timer</string>
+    <string name="date_time_txt">date_time</string>
+    <string name="sign_out_layout_txt">SIGN OUT</string>
+    <string name="advance_punch_layout_txt">ADVANCE PUNCH</string>
+    <string name="date_and_time_atendaceScreen_txt"><![CDATA[Date & Time]]></string>
+    <string name="work_location_txt">Location</string>
+    <string name="no_record_found_txt">No Record Found!</string>
+    <string name="no_record_found_txt_new">No Record Found!</string>
+    <string name="no_record_found_txt_admin">No Record Found!</string>
+
+    <string name="date_txt">Date</string>
+    <string name="date_hint_txt">Date</string>
+    <string name="time_txt">Time</string>
+    <string name="select_permission_txt">Select Permission</string>
+    <string name="is_full_day_txt">Is Full Day ?</string>
+    <string name="is_flexible_txt">Is Flexible ?</string>
+
+
+    <string name="is_for_period_txt">Is For Period ?</string>
+    <string name="from_date_txt">From Date</string>
+    <string name="to_date_txt">To Date</string>
+    <string name="from_time_txt">From Time</string>
+    <string name="to_time_txt">To Time</string>
+    <string name="upload_attachment_txt">Attachment</string>
+    <string name="upload_file_txt">Upload File</string>
+    <string name="capture_txt">Capture</string>
+    <string name="file_name_txt">File name</string>
+    <string name="remarks_txt">Remarks</string>
+    <string name="send_txt">Send</string>
+    <string name="cancel_txt">Cancel</string>
+    <string name="total_delay_txt">Total Delay</string>
+    <string name="one_hour_time_txt">1h 30m</string>
+    <string name="total_early_out_txt">Total Early Out</string>
+    <string name="total_lost_time_txt">Total Lost Time</string>
+    <string name="total_absent">Total Absent</string>
+    <string name="remaining_time_of_personal_permission">Remaining time of personal permission</string>
+    <string name="total_missing_in_txt">Total Missing In</string>
+    <string name="total_missing_out_txt">Total Missing Out</string>
+    <string name="time_of_not_completing_work_hours_txt">Time of not completing work hours</string>
+    <string name="leaves_txt">Leaves</string>
+    <string name="permissions_txt">Permissions</string>
+    <string name="nursing_permission_txt">Nursing_Permission</string>
+    <string name="study_permission_txt">Study_Permission</string>
+    <string name="holiday_txt">Holiday</string>
+    <string name="absent_txt">Absent</string>
+    <string name="violations_txt">Violations</string>
+    <string name="rest_day_txt">Rest day</string>
+    <string name="employee_name_txt">Test</string>
+    <string name="search_hint_txt">Search...</string>
+    <string name="content_txt">Content</string>
+    <string name="advance_punch_txt">Official out</string>
+    <string name="old_password_txt">Current Password</string>
+    <string name="old_password_hint_txt">Old Password</string>
+    <string name="new_password_txt">New Password</string>
+    <string name="new_password_hint_txt">New Password</string>
+    <string name="confirm_new_password_txt">Confirm New Password</string>
+    <string name="confirm_new_password_hint_txt">Confirm New Password</string>
+    <string name="send_btn_txt">Send</string>
+    <string name="phone_num_txt">+962-6-5338565</string>
+    <string name="mail_txt">Product Helpdesk: info@aman-me.com</string>
+    <string name="website_txt">www.aman-me.com</string>
+    <string name="company_name_txt">Powered by: Aman Information Systems</string>
+    <string name="details_information_txt">Details Information</string>
+    <string name="count_txt">120</string>
+    <string name="success_txt">Success</string>
+    <string name="success_new_txt">Succes</string>
+    <string name="details_txt">Details</string>
+    <string name="permission_txt">Permission</string>
+
+    <string name="status_txt">Status</string>
+    <string name="request_date_txt">Request Date</string>
+
+    <string name="approve_txt">APPROVE</string>
+    <string name="reject_txt">REJECT</string>
+    <string name="virtually_from_anywhere">virtually from anywhere</string>
+    <string name="dynamic_calendar">DYNAMIC CALENDAR</string>
+    <string name="track_and_view_summary_with_an">Track and view summary with an</string>
+    <string name="interactive_calender">interactive calendar</string>
+    <string name="automatically_gets_the_location_of_the">Automatically gets the location of the</string>
+    <string name="user_to_mark_attandence">user to mark attandence</string>
+    <string name="interactive_reports">INTERACTIVE REPORTS</string>
+    <string name="view_summary_with_real_time">View summary with real-time</string>
+    <string name="interactive_reports_small_txt">interactive reports</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="employee_no_1">Employee no</string>
+    <string name="employee_daily_report">Employee Daily Report</string>
+    <string name="text_eighty_no">80</string>
+    <string name="delay_02_34_txt">Delay: 02:34</string>
+    <string name="date_text">08/11/2023</string>
+    <string name="emp_status_txt">emp_status</string>
+    <string name="duration_txt">Duration</string>
+    <string name="permissions">Permissions</string>
+    <string name="announcements">Announcements</string>
+    <string name="admin_self_services">Admin Services</string>
+    <string name="company">Company</string>
+    <string name="work_group">Work Group</string>
+    <string name="work_locations">Work Locations</string>
+    <string name="employee_number">Employee number</string>
+    <string name="entity">Entity</string>
+    <string name="content">Content</string>
+    <string name="employees">Employees</string>
+    <string name="request_date">Request Date</string>
+    <string name="duration">Duration</string>
+    <string name="save">Save</string>
+    <string name="alert_dialogue_txt">You are not allowed to proceed \n for the transaction</string>
+    <string name="you_have_delay_txt">You have a Delay Today  !</string>
+    <string name="you_have_missing_in_txt">You have Missed In Transaction on</string>
+    <string name="out_time_txt">Out Time :</string>
+    <string name="missed_out_transaction_txt">You have Missed Out Transaction on</string>
+    <string name="in_time_txt">In Time :</string>
+    <string name="early_out_txt">"You have an Early Out on "</string>
+    <string name="out_duration_txt">"You have an Out duration on "</string>
+    <string name="remote_work_txt">Remote Work</string>
+    <string name="romers_txt">Roamers</string>
+    <string name="user_name_txt">User name</string>
+    <string name="car_punch_in_txt">Car Park Punch In</string>
+    <string name="meters_txt">" meters"</string>
+    <string name="spoof_detect_txt">You are using spoofed loc your are allowed to check in</string>
+    <string name="from_date_colon_txt">From Date:</string>
+    <string name="to_date_colon_txt">To Date:</string>
+    <string name="leave_request_txt">Leave Request</string>
+    <string name="none_txt">None</string>
+    <string name="from_time_colon">From Time:</string>
+    <string name="to_time_txt_colon">To Time:</string>
+    <string name="update_permission_txt">Update Permission Request</string>
+    <string name="permission_colon_txt">Permission: </string>
+    <string name="update_leave_request_txt">Update Leave Request</string>
+    <string name="leave_colon_txt">Leave: </string>
+    <string name="update_manual_entry_request_txt">Update Manual Entry Request</string>
+    <string name="manual_entry_colon_txt">Manual Entry:</string>
+    <string name="leave_type_txt">Leave Type</string>
+    <string name="advance_punch">Advance Punch</string>
+    <string name="biometric_cnfrm_txt">Biometric not Registered, Do you want to register Now?</string>
+    <string name="select_all">Select All</string>
+    <string name="dismiss_txt">DISMISS</string>
+    <string name="yes_txt">Yes</string>
+    <string name="no_txt">No</string>
+    <string name="sure_txt">Are you sure you want to Logout?</string>
+    <string name="language_txt">Language</string>
+    <string name="english_txt">English</string>
+    <string name="arabic_txt">العربية</string>
+    <string name="complain_amp_suggestion_txt"><![CDATA[Complaints & Suggestion]]></string>
+    <string name="enable_fingerprint_txt">Enable Fingerprint</string>
+    <string name="rate_the_app_txt">Rate the app</string>
+    <string name="change_pswrd_txt">Change password</string>
+    <string name="app_version_txt">App Version</string>
+    <string name="two_point_zero_txt">2.0</string>
+    <string name="customer_short_name_txt">Customer Short Name</string>
+    <string name="title_txt">Title</string>
+    <string name="design_txt">Designation</string>
+    <string name="_9_txt">9</string>
+    <string name="_2_txt">2</string>
+    <string name="out_of_office_txt">Out of the Office</string>
+    <string name="customer_name_txt">Customer Name</string>
+    <string name="ok">OK</string>
+    <string name="product">Product</string>
+    <string name="organisation">Licensed to:</string>
+    <string name="transaction_date">Transaction Date</string>
+    <string name="period_txt">Period</string>
+    <string name="full_day_txt">Full day</string>
+
+
+
+    <string name="finish_txt">Finish</string>
+    <string name="leave_days_txt">Leave Days</string>
+    <string name="violation_days_txt">Violation Days</string>
+    <string name="absent_days_txt">Absent Days</string>
+    <string name="normal_attendance_txt">Normal Attendance</string>
+    <string name="rest_days_txt">Rest Days</string>
+    <string name="remote_work_req_txt">Remote Work Requests</string>
+    <string name="leave_pending_txt">Leave (Pending)</string>
+    <string name="touch_id_txt">TOUCH ID</string>
+    <string name="smartai_email_txt">smartai.dev</string>
+    <string name="invalid_datetime_text">Invalid date or time format</string>
+    <string name="date_validation">Please make sure from date is less than or equal to date.</string>
+    <string name="response_no_record_found_txt">No Record Found!</string>
+    <string name="response_error_txt">Error</string>
+    <string name="employee_request_txt">Employees Request</string>
+
+    <string name="complains_txt">Complaints</string>
+    <string name="select_company">Please select Company</string>
+    <string name="select_permission">Please select Permission</string>
+    <string name="every_day_counts">Every Minute Counts!</string>
+    <string name="go_tawajud">Go TAWAJUD</string>
+
+    <string name="complaints_suggestion_txt"><![CDATA[Complaints & Suggestions]]></string>
+    <string name="hi">Hi,</string>
+    <string name="violations">Violations</string>
+    <string name="applied">Applied</string>
+    <string name="requests">Requests</string>
+    <string name="skip">Skip</string>
+    <string name="biometric_not_available">Biometric sensor is not available</string>
+    <string name="fingerprint_authentication">Fingerprint Authentication</string>
+    <string name="finger_on_sensor">Place your finger on the sensor to authenticate</string>
+    <string name="view_more">View more</string>
+    <string name="not_allowed_out">Sorry! Out transaction is not allowed</string>
+
+    <string name="out_of_office">Out of office</string>
+    <string name="not_allowed"> You are not allowed to proceed for the transactions</string>
+    <string name="not_allowed_new">Sorry! You are  %.2f meters away from Work Location </string>
+
+
+
+
+    <string name="valid_for_txt">"Valid for:"</string>
+    <string name="self_dashboard_txt">Self Dashboard</string>
+    <string name="manager_dashboard_txt">Manager Dashboard</string>
+    <string name="admin_dashboard_txt">Admin Dashboard</string>
+    <string name="info">Information</string>
+    <string name="license_end_date">License End Date</string>
+
+
+    <string name="self_reports">Self Reports</string>
+    <string name="manager_reports">Manager Reports</string>
+    <string name="admin_reports">Admin Reports</string>
+    <string name="select">Please Select</string>
+    <string name="profile">Profile</string>
+    <string name="copyright_txt">All rights reserved for Aman Information Systems - (2024) @ - Jordan</string>
+    <string name="company_txt"> company</string>
+    <string name="choose_your_theme">Choose your Theme</string>
+    <string name="hr">HR</string>
+    <string name="email_exist_txt">Email Exists</string>
+    <string name="email_not_exist_txt">Email Not Found</string>
+    <string name="not_registered">Your organisation is not registed\nPlease contact info@aman-me.com for more information.</string>
+    <string name="select_leave_txt">Select Leave</string>
+    <string name="select_manual_entry_txt">Select Manual Entry</string>
+    <string name="file_mandatory_txt">Please attach a file to upload</string>
+    <string name="please_wait">Please wait....</string>
+    <string name="upload_file_not_support_txt">The uploaded file is not supported</string>
+    <string name="title_upload_file_not_support_txt">File upload Error!</string>
+
+
+    <string name="entity_type_txt">Please select filter Type</string>
+    <string name="select_entity_subtype_txt">Please select the Entity Sub Type</string>
+    <string name="select_workloc_txt">Please select the WorkLocation Sub Type</string>
+    <string name="select_workgroup_txt">Please select the WorkGroup Sub Type</string>
+    <string name="select_emp_txt">Please select the Employee in</string>
+    <string name="download_plz_wait_txt">Downloading the file. Please wait...</string>
+    <string name="download_successfully_txt">PDF file downloaded successfully to:</string>
+    <string name="download_error_for_pdf_txt">Failed to download PDF file. Error:</string>
+    <string name="please_click_again">Please click back again to exit</string>
+
+    <string name="report_too_long">Report is too long, Please try from Web Application</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="location_access_description"> Tawajud requires location access to perform Sign in and Sign out actions.Tawajud doesn’t track or store user location when no sign in/out actions are performed.</string>
+
+    <string name="version_alert">This version of the app is not supported any more. Please update now to continue using Tawajud Premium Plus</string>
+    <string name="adv_punch_access">Not allowed to access Advance Punch</string>
+    <string name="old_new_pswd">You have entered same password</string>
+    <string name="out_location_1">Sorry! You are  </string>
+    <string name="out_location_2">away from Work Location </string>
+    <string name="enable_device_location">Please Enable Device Location</string>
+    <string name="warning_spoof_loc">Warning you are using a spoofed location App</string>
+
+    <string name="transaction_already_exists">Transaction already Exists</string>
+
+
+
+</resources>

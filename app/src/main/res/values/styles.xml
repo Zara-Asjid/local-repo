@@ -1,0 +1,138 @@
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!--
+  <style name="AppTheme">
+        <item name="announcement">@drawable/announcement</item>
+        <item name="app_version">@drawable/app_version</item>
+        <item name="attendance">@drawable/attendance</item>
+        <item name="attendance_screen">@drawable/attendance_screen</item>
+        <item name="attendance_splash">@drawable/attendance_splash</item>
+        <item name="badweathr">@drawable/badweathr</item>
+        <item name="calendar">@drawable/calendar</item>
+        <item name="calendar_screen">@drawable/calendar_screen</item>
+        <item name="calendar_splash">@drawable/calendar_splash</item>
+        <item name="change_password">@drawable/change_password</item>
+        <item name="complaints">@drawable/complaints</item>
+        <item name="dashboard_bg">@drawable/dashboard_bg</item>
+        <item name="dashboard_new">@drawable/dashboard_new</item>
+        <item name="dynamic_flow_screen">@drawable/dynamic_flow_screen</item>
+        <item name="empl_perf_splash">@drawable/empl_perf_splash</item>
+        <item name="employee_profile_icon">@drawable/employee_profile_icon</item>
+        <item name="fingerprint">@drawable/fingerprint</item>
+        <item name="h_back">@drawable/h_back</item>
+        <item name="info_contact">@drawable/info_contact</item>
+        <item name="language">@drawable/language</item>
+        <item name="logo_vertical">@drawable/logo_vertical</item>
+        <item name="managericon">@drawable/managericon</item>
+        <item name="password">@drawable/password</item>
+        <item name="permission_splash">@drawable/permission_splash</item>
+        <item name="phone_svg">@drawable/phone_svg</item>
+        <item name="rate">@drawable/rate</item>
+        <item name="report">@drawable/report</item>
+        <item name="rolebased_screen">@drawable/rolebased_screen</item>
+        <item name="selfservice">@drawable/selfservice</item>
+        <item name="selfservice_new">@drawable/selfservice_new</item>
+        <item name="send">@drawable/send</item>
+        <item name="summary">@drawable/summary</item>
+
+        <item name="themecolor">@color/green</item>
+
+        <item name="themecolor_light">@color/greenlight</item>
+
+        <item name="android:statusBarColor">@color/green</item>
+
+
+    </style>
+
+
+ <style name="AppTheme_brown" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+   <item name="announcement">@drawable/announcement</item>
+        <item name="app_version">@drawable/app_version</item>
+        <item name="attendance">@drawable/attendance</item>
+        <item name="attendance_screen">@drawable/attendance_screen</item>
+        <item name="attendance_splash">@drawable/attendance_splash</item>
+        <item name="badweathr">@drawable/badweathr</item>
+        <item name="calendar">@drawable/calendar</item>
+        <item name="calendar_screen">@drawable/calendar_screen</item>
+        <item name="calendar_splash">@drawable/calendar_splash</item>
+        <item name="change_password">@drawable/change_password</item>
+        <item name="complaints">@drawable/complaints</item>
+        <item name="dashboard_bg">@drawable/dashboard_bg</item>
+        <item name="dashboard_new">@drawable/dashboard_new</item>
+        <item name="dynamic_flow_screen">@drawable/dynamic_flow_screen</item>
+        <item name="empl_perf_splash">@drawable/empl_perf_splash</item>
+        <item name="employee_profile_icon">@drawable/employee_profile_icon</item>
+        <item name="fingerprint">@drawable/fingerprint</item>
+        <item name="h_back">@drawable/h_back</item>
+        <item name="info_contact">@drawable/info_contact</item>
+        <item name="language">@drawable/language</item>
+        <item name="logo_vertical">@drawable/logo_vertical</item>
+        <item name="managericon">@drawable/managericon</item>
+        <item name="password">@drawable/password</item>
+        <item name="permission_splash">@drawable/permission_splash</item>
+        <item name="phone_svg">@drawable/phone_svg</item>
+        <item name="rate">@drawable/rate</item>
+        <item name="report">@drawable/report</item>
+        <item name="rolebased_screen">@drawable/rolebased_screen</item>
+        <item name="selfservice">@drawable/selfservice</item>
+        <item name="selfservice_new">@drawable/selfservice_new</item>
+        <item name="send">@drawable/send</item>
+        <item name="summary">@drawable/summary</item>
+
+
+        <item name="themecolor">@color/color_brown</item>
+
+        <item name="themecolor_light">@color/brownlight</item>
+        <item name="android:statusBarColor">@color/color_brown</item>
+
+    </style>
+
+
+    <style name="AppTheme_sky_blue" parent="Theme.AppCompat">
+
+        <item name="announcement">@drawable/announcement</item>
+        <item name="app_version">@drawable/app_version</item>
+        <item name="attendance">@drawable/attendance</item>
+        <item name="attendance_screen">@drawable/attendance_screen</item>
+        <item name="attendance_splash">@drawable/attendance_splash</item>
+        <item name="badweathr">@drawable/badweathr</item>
+        <item name="calendar">@drawable/calendar</item>
+        <item name="calendar_screen">@drawable/calendar_screen</item>
+        <item name="calendar_splash">@drawable/calendar_splash</item>
+        <item name="change_password">@drawable/change_password</item>
+        <item name="complaints">@drawable/complaints</item>
+        <item name="dashboard_bg">@drawable/dashboard_bg</item>
+        <item name="dashboard_new">@drawable/dashboard_new</item>
+        <item name="dynamic_flow_screen">@drawable/dynamic_flow_screen</item>
+        <item name="empl_perf_splash">@drawable/empl_perf_splash</item>
+        <item name="employee_profile_icon">@drawable/employee_profile_icon</item>
+        <item name="fingerprint">@drawable/fingerprint</item>
+        <item name="h_back">@drawable/h_back</item>
+        <item name="info_contact">@drawable/info_contact</item>
+        <item name="language">@drawable/language</item>
+        <item name="logo_vertical">@drawable/logo_vertical</item>
+        <item name="managericon">@drawable/managericon</item>
+        <item name="password">@drawable/password</item>
+        <item name="permission_splash">@drawable/permission_splash</item>
+        <item name="phone_svg">@drawable/phone_svg</item>
+        <item name="rate">@drawable/rate</item>
+        <item name="report">@drawable/report</item>
+        <item name="rolebased_screen">@drawable/rolebased_screen</item>
+        <item name="selfservice">@drawable/selfservice</item>
+        <item name="selfservice_new">@drawable/selfservice_new</item>
+        <item name="send">@drawable/send</item>
+        <item name="summary">@drawable/summary</item>
+
+
+
+        <item name="themecolor">@color/color_skyblue</item>
+
+        <item name="themecolor_light">@color/skybluelight</item>
+
+        <item name="android:statusBarColor">@color/color_skyblue</item>
+
+    </style>-->
+
+
+</resources>

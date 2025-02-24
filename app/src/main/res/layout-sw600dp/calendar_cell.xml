@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_rectangle_lightgreen_boader"
+    android:orientation="vertical">
+
+    <!--REQUIRED-->
+    <TextView
+        android:id="@+id/dayLabel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="2"
+        android:layout_margin="@dimen/_1sdp"
+        android:textSize="@dimen/_8ssp"
+        android:textColor="@color/grey"
+      android:paddingStart="@dimen/_5sdp"
+     />
+
+
+
+</LinearLayout>

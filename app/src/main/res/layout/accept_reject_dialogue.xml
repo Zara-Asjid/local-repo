@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_rectangle_opac"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+
+        android:text="@string/remarks_txt"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialogWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_alignStart="@id/tv_title"
+        android:layout_alignParentEnd="true"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="true"
+        android:layout_marginTop="@dimen/_7sdp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:filterTouchesWhenObscured="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:hint="@string/enter_remarks"
+            android:inputType="textMultiLine"
+            android:paddingTop="@dimen/_15sdp"
+            android:singleLine="false"
+            android:textSize="@dimen/_10ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/title"
+        android:layout_alignEnd="@id/tv_title"
+        android:layout_alignStart="@id/tv_title"
+        android:layout_below="@id/tv_title"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        />
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogWrapper"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_7sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/cancel_small"
+            android:textColor="@color/gift_indicator_inactive"
+            android:textSize="@dimen/_11ssp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/gift_indicator_inactive"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+</RelativeLayout>

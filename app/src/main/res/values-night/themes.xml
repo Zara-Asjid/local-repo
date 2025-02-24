@@ -1,0 +1,201 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- <style name="Base.Theme.Tawajud" parent="Theme.Material3.DayNight.NoActionBar">-->
+
+    <style name="AppTheme_green" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/green</item>
+
+
+
+        <item name="themecolor">@color/green</item>
+        <item name="themecolorlight">@color/greenlight</item>
+
+
+        <item name="android:statusBarColor">@color/green</item>
+
+        <item name="app_icon">@drawable/app_icon</item>
+        <item name="bg">@drawable/bg_green</item>
+        <item name="logo">@drawable/logo</item>
+        <item name="user">@drawable/user</item>
+        <item name="announcement">@drawable/announcement</item>
+        <item name="app_version">@drawable/app_version</item>
+        <item name="attendance">@drawable/attendance</item>
+        <item name="attendance_screen">@drawable/attendance_screen</item>
+        <item name="attendance_splash">@drawable/attendance_splash</item>
+        <item name="badweathr">@drawable/badweathr</item>
+        <item name="calendar">@drawable/calendar</item>
+        <item name="calendar_screen">@drawable/calendar_screen</item>
+        <item name="calendar_splash">@drawable/calendar_splash</item>
+        <item name="change_password">@drawable/change_password</item>
+        <item name="complaints">@drawable/complaints</item>
+        <item name="dashboard_bg">@drawable/dashboard_bg</item>
+        <item name="dashboard_new">@drawable/dashboard_new</item>
+        <item name="dynamic_flow_screen">@drawable/dynamic_flow_screen</item>
+        <item name="empl_perf_splash">@drawable/empl_perf_splash</item>
+        <item name="employee_profile_icon">@drawable/emp_profile_icon</item>
+        <item name="fingerprint">@drawable/fingerprint</item>
+        <item name="h_back">@drawable/h_back</item>
+        <item name="info_contact">@drawable/info_contact</item>
+        <item name="language">@drawable/language</item>
+        <item name="logo_vertical">@drawable/logo_vertical</item>
+        <item name="managericon">@drawable/managericon</item>
+        <item name="password_login">@drawable/password</item>
+        <item name="password">@drawable/password</item>
+
+        <item name="permission_splash">@drawable/permission_splash</item>
+        <item name="phone_svg">@drawable/phone_svg</item>
+        <item name="rate">@drawable/rate</item>
+        <item name="report">@drawable/report</item>
+        <item name="rolebased_screen">@drawable/rolebased_screen</item>
+        <item name="selfservice">@drawable/selfservice</item>
+        <item name="selfservice_new">@drawable/selfservice_new</item>
+        <item name="send">@drawable/send</item>
+        <item name="summary">@drawable/summary</item>
+        <item name="emp_profile_icon">@drawable/emp_profile_icon</item>
+        <item name="report_splash">@drawable/report_splash</item>
+        <item name="website">@drawable/website</item>
+        <item name="message">@drawable/message</item>
+        <item name="send_back">@drawable/send_back</item>
+        <item name="theme_settings">@drawable/app_theme</item>
+
+
+    </style>
+
+    <style name="AppTheme_skyblue" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+
+        <item name="colorPrimary">@color/color_skyblue</item>
+        <item name="colorPrimaryDark">@color/color_skyblue</item>
+        <item name="colorAccent">@color/color_skyblue</item>
+
+
+
+        <item name="themecolor">@color/color_skyblue</item>
+        <item name="themecolorlight">@color/skybluelight</item>
+        <item name="android:statusBarColor">@color/color_skyblue</item>
+
+        <item name="bg">@drawable/bg_blue</item>
+
+        <item name="app_icon">@drawable/app_icon_b</item>
+        <item name="logo">@drawable/logo_b</item>
+        <item name="user">@drawable/user_b</item>
+        <item name="announcement">@drawable/announcement_b</item>
+        <item name="attendance">@drawable/attendance_b</item>
+        <item name="attendance_screen">@drawable/attendance_screen_b</item>
+        <item name="attendance_splash">@drawable/attendance_splash_b</item>
+        <item name="badweathr">@drawable/badweathr_b</item>
+        <item name="calendar">@drawable/calendar_b</item>
+        <item name="calendar_screen">@drawable/calendar_screen_b</item>
+        <item name="calendar_splash">@drawable/calendar_splash_b</item>
+        <item name="change_password">@drawable/change_password_b</item>
+        <item name="complaints">@drawable/complaints_b</item>
+        <item name="dashboard_bg">@drawable/dashboard_bg_b</item>
+        <item name="dashboard_new">@drawable/dashboard_new_b</item>
+        <item name="dynamic_flow_screen">@drawable/dynamic_flow_screen_b</item>
+        <item name="empl_perf_splash">@drawable/empl_perf_splash_b</item>
+        <item name="employee_profile_icon">@drawable/emp_profile_icon_b</item>
+        <item name="fingerprint">@drawable/fingerprint_b</item>
+        <item name="h_back">@drawable/h_back_b</item>
+        <item name="info_contact">@drawable/info_contact_b</item>
+        <item name="language">@drawable/language_b</item>
+        <item name="logo_vertical">@drawable/logo_vertical_b</item>
+        <item name="managericon">@drawable/managericon_b</item>
+        <item name="password_login">@drawable/password_b</item>
+        <item name="password">@drawable/password_b</item>
+
+        <item name="permission_splash">@drawable/permission_splash_b</item>
+        <item name="phone_svg">@drawable/phone_svg_b</item>
+        <item name="rate">@drawable/rate_b</item>
+        <item name="report">@drawable/report_b</item>
+        <item name="rolebased_screen">@drawable/rolebased_screen_b</item>
+        <item name="selfservice">@drawable/selfservice_b</item>
+        <item name="selfservice_new">@drawable/selfservice_new_b</item>
+        <item name="send">@drawable/send_b</item>
+        <item name="summary">@drawable/summary_b</item>
+        <item name="emp_profile_icon">@drawable/emp_profile_icon_b</item>
+        <item name="report_splash">@drawable/report_splash_b</item>
+        <item name="website">@drawable/website_b</item>
+        <item name="message">@drawable/message_b</item>
+        <item name="send_back">@drawable/send_back_b</item>
+        <item name="theme_settings">@drawable/app_theme_b</item>
+        <item name="app_version">@drawable/app_version_b</item>
+
+    </style>
+
+
+
+
+    <style name="AppTheme_brown" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+
+        <item name="colorPrimary">@color/color_brown</item>
+        <item name="colorPrimaryDark">@color/color_brown</item>
+        <item name="colorAccent">@color/color_brown</item>
+
+
+        <item name="themecolor">@color/color_brown</item>
+        <item name="themecolorlight">@color/brownlight</item>
+        <item name="android:statusBarColor">@color/color_brown</item>
+
+
+        <item name="bg">@drawable/bg_brown</item>
+
+
+
+
+        <item name="app_icon">@drawable/app_icon_br</item>
+        <item name="logo">@drawable/logo_br</item>
+        <item name="user">@drawable/user_br</item>
+
+        <item name="announcement">@drawable/announcement_br</item>
+        <item name="app_version">@drawable/app_version_br</item>
+        <item name="attendance">@drawable/attendance_br</item>
+        <item name="attendance_screen">@drawable/attendance_screen_br</item>
+        <item name="attendance_splash">@drawable/attendance_splash_br</item>
+        <item name="badweathr">@drawable/badweathr_br</item>
+        <item name="calendar">@drawable/calendar_br</item>
+        <item name="calendar_screen">@drawable/calendar_screen_br</item>
+        <item name="calendar_splash">@drawable/calendar_splash_br</item>
+        <item name="change_password">@drawable/change_password_br</item>
+        <item name="complaints">@drawable/complaints_br</item>
+        <item name="dashboard_bg">@drawable/dashboard_bg_br</item>
+        <item name="dashboard_new">@drawable/dashboard_new_br</item>
+        <item name="dynamic_flow_screen">@drawable/dynamic_flow_screen_br</item>
+        <item name="empl_perf_splash">@drawable/empl_perf_splash_br</item>
+        <item name="employee_profile_icon">@drawable/emp_profile_icon_br</item>
+        <item name="fingerprint">@drawable/fingerprint_br</item>
+        <item name="h_back">@drawable/h_back_br</item>
+        <item name="info_contact">@drawable/info_contact_br</item>
+        <item name="language">@drawable/language_br</item>
+        <item name="logo_vertical">@drawable/logo_vertical_br</item>
+        <item name="managericon">@drawable/managericon_br</item>
+        <item name="password_login">@drawable/password_br</item>
+        <item name="password">@drawable/password_br</item>
+        <item name="permission_splash">@drawable/permission_splash_br</item>
+        <item name="phone_svg">@drawable/phone_svg_br</item>
+        <item name="rate">@drawable/rate_br</item>
+        <item name="report">@drawable/report_br</item>
+        <item name="rolebased_screen">@drawable/rolebased_screen_br</item>
+        <item name="selfservice">@drawable/selfservice_br</item>
+        <item name="selfservice_new">@drawable/selfservice_new_br</item>
+        <item name="send">@drawable/send_br</item>
+        <item name="summary">@drawable/summary_br</item>
+        <item name="emp_profile_icon">@drawable/emp_profile_icon_br</item>
+        <item name="report_splash">@drawable/report_splash_br</item>
+        <item name="website">@drawable/website_br</item>
+        <item name="message">@drawable/message_br</item>
+        <item name="send_back">@drawable/send_back_br</item>
+        <item name="theme_settings">@drawable/app_theme_br</item>
+
+    </style>
+
+
+
+
+
+
+</resources>

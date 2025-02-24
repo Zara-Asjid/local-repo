@@ -1,0 +1,464 @@
+<resources>
+    <string name="app_name">Tawajud Premium</string>
+
+
+    <string name="base_url">https://sgi.software/SAIT_RegistrationService/GeneralService.asmx</string>
+    <string name="connection_timeout">Connection timeout</string>
+
+    <!--    <string name="base_url">http://104.238.125.92/UserRegister/GeneralService.asmx</string>-->
+    <!--http://104.238.125.92/Userregister/GeneralService.asmx-->
+    <!--http://192.168.10.14/UserRegister/GeneralService.asmx-->
+    <string name="entity_type_txt">يرجى إختيار نوع الترشيح</string>
+    <string name="select_emp_txt">يرجى إختيار الموظفين في</string>
+    <string name="select_entity_subtype_txt">يرجى إختيار القسم المطلوب</string>
+    <string name="select_workloc_txt">يرجى إختيار موقع العمل المطلوب</string>
+    <string name="select_workgroup_txt">يرجى إختيار مجموعة العمل المطلوبة</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyD9mkUzYbstlL_5bEkiwdeIASqfoNh1jfE</string>
+    <string name="file_mandatory_txt">يرجى إرفاق ملف للتحميل</string>
+    <string name="no_internet_connection">لايوجد إتصال بالإنترنت</string>
+<!--
+    <string name="network_failure">خلل في الشبكة</string>
+-->
+    <string name="conversion_error">خطأ في التحويل</string>
+    <string name="loc_per_denied">رفض إذن الموقع!</string>
+
+    <string name="navigation_drawer_open">فتح درج التنقل</string>
+    <string name="navigation_drawer_close">إغلاق درج التنقل</string>
+    <string name="upload_file_not_support_txt">الملف الذي تم تحميله غير مدعوم</string>
+    <string name="title_upload_file_not_support_txt">خطأ في تحميل الملف</string>
+
+
+    <string name="change_base_url">تغيير عنوان URL الأساسي</string>
+
+
+
+    <string name="title_activity_main">النشاط الأساسي</string>
+    <string name="title_settings">الإعدادات</string>
+    <string name="title_help">المساعدة</string>
+    <string name="break_out">خروج إستراحة</string>
+    <string name="title_activity_login">تسجيل الدخول</string>
+    <string name="fragment_title_employee_request">طلبات الموظفين</string>
+
+
+    <!-- Strings related to login -->
+
+
+    <string name="error_invalid_email">عنوان البريد الإلكتروني غير صالح</string>
+    <string name="action_sign_in">تسجيل الدخول</string>
+    <string name="error_field_required">هذا الحقل مطلوب</string>
+    <string name="error_invalid_username">يجب أن يتكون إسم المستخدم من أربعة أحرف على الأقل</string>
+    <string name="error_fields_required">الحقول مطلوبة</string>
+    <string name="logout">خروج</string>
+    <string name="about_us">معلومات عنا</string>
+    <string name="changeable_base_url">عنوان URL الأساسي</string>
+    <string name="enable_face_recognition">تمكين تسجيل الدخول ببصمة الوجه</string>
+
+    <string name="face_login">تسجيل الدخول عن طريق بصمة الوجه</string>
+    <string name="pending">قيد الإعتماد</string>
+    <string name="reason">الأسباب:</string>
+
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="user_name">إسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="remmember_me">تذكرني</string>
+    <string name="or">أو</string>
+    <string name="touch_to_login">إلمس لتسجيل الدخول</string>
+    <string name="submit">إرسال</string>
+    <string name="registerd_text">الرجاء إدخال البريد الإلكتروني المسجل لنتمكن من تخصيص الصفحة الرئيسية الخاصة بالتطبيق</string>
+    <string name="welcome">أهلاً بك</string>
+    <string name="date_time">الوقت والتاريخ</string>
+    <string name="attendance">الحضور</string>
+    <string name="self_service">الخدمات الذاتية</string>
+    <string name="employee_request">طلبات الموظف</string>
+    <string name="reports">التقارير</string>
+    <string name="dashboard">لوحات القياس</string>
+
+    <string name="in">دخول</string>
+    <string name="out">خروج</string>
+
+    <string name="admin">مسؤول النظام</string>
+    <string name="okay">حسناً</string>
+    <string name="packagename">الحزمة</string>
+    <string name="release_no">رقم الإصدار</string>
+    <string name="license_start_date">تاريخ بدء الترخيص</string>
+    <string name="users_allowed">المستخدمين المتاح لهم</string>
+    <string name="users_registered">المستخدمين المسجلين</string>
+    <string name="domain_name">اسم النطاق</string>
+    <string name="admin_email">البريد الإلكتروني للمسؤول</string>
+    <string name="admin_mobile">رقم هاتف المسؤول</string>
+    <string name="register">تسجيل</string>
+    <string name="total_delay_early_out">مجمو ع التأخير والخروج المبكر</string>
+    <string name="ss_approved_by_manager">تمت الموافقة عليه بواسطة المدير</string>
+    <string name="ss_approved_by_hr">تمت الموافقة عليه بواسطة الموارد البشرية</string>
+    <string name="ss_rejected_by_manager">مرفوض من قبل المدير</string>
+    <string name="ss_rejected_by_hr">مرفوض من قبل الموارد البشرية</string>
+    <string name="ss_approved_by_gm">تمت الموافقة عليه بواسطة المدير العام</string>
+    <string name="ss_rejected_by_gm">مرفوض من قبل المدير العام</string>
+    <string name="ss_auto_approved">تمت الموافقة عليه بشكل تلقائي</string>
+    <string name="ss_approved_by_1st_manager">تمت الموافقة عليه بواسطة المدير الأول</string>
+    <string name="ss_deleted">محذوف</string>
+    <string name="ss_permission_converted_to_leave">مغادرة محولة لإجازة</string>
+    <string name="ss_approved_by_2nd_manager">تمت الموافقة عليه بواسطة المدير الثاني</string>
+    <string name="ss_rejected_by_2nd_manager">مرفوض من قبل المدير الثاني</string>
+    <string name="error_server_key">الخادم لا يستجيب</string>
+    <array name="request_type">
+        <item>يرجى إختيار نوع الطلب</item>
+        <item>طلبات المغادرة</item>
+        <item>طلبات الإجازة</item>
+    </array>
+
+
+    <string name="employee_list">قائمة الموظفين</string>
+    <string name="h_Leaves">الإجازات</string>
+    <string name="h_Permissions">المغادرات</string>
+    <string name="h_Nursing_Permission">مغادرة الرضاعة</string>
+    <string name="h_Study_Permission">مغادرة الدراسة</string>
+    <string name="h_Holiday">العطل الرسمية</string>
+    <string name="h_Absent">غياب</string>
+    <string name="h_Violations">المخالفات</string>
+    <string name="h_Rest_Day">يوم إستراحة</string>
+    <string name="over_time_request">طلب الوقت الإضافي</string>
+    <string name="manual_entry_request">طلب الإدخال اليدوي</string>
+    <string name="approve">قبول</string>
+    <string name="reject">رفض</string>
+    <string name="rejected_by_manager">مرفوض من قبل المدير</string>
+    <string name="permission_request">طلب مغادرة</string>
+    <string name="emp_permission">مغادرة:</string>
+    <string name="emp_to_date">إلى تاريخ:</string>
+    <string name="emp_from_time">من وقت:</string>
+    <string name="status">الحالة</string>
+    <string name="emp_status">الملاحظات:</string>
+    <string name="date">تاريخ</string>
+
+    <string name="enter_remarks">يرجى إدخال الملاحظات</string>
+    <string name="title">العنوان</string>
+    <string name="cancel_small">اإلغاء</string>
+    <string name="confirm">تأكيد</string>
+    <string name="dialog_msg">هل أنت متأكد أنك تريد الموافقة؟</string>
+    <string name="dialog_btn_yes">نعم</string>
+    <string name="employee_profiles">صفحات الموظفين الشخصية</string>
+    <string name="approved">تمت الموافقة</string>
+    <string name="to_time">إلى وقت</string>
+    <string name="from_time">من وقت</string>
+    <string name="emp_date">التاريخ:</string>
+    <string name="emp_leave">الإجازة:</string>
+    <string name="enter_valid_password_by_finger">لتمكين تسجيل الدخول بواسطة البصمة، الرجاء إدخال كلمة مرور صالحة</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="register_email_txt">يرجى إدخال البريد الإلكتروني للتسجيل</string>
+    <string name="time_and_attendance_txt">نظام الحضور والإنصراف</string>
+    <string name="register_email_edit_txt">10000@smartai.dev</string>
+    <string name="user_name_hint_txt">إسم المستخدم</string>
+    <string name="in_btn_txt">دخول</string>
+    <string name="out_btn_txt">خروج</string>
+    <string name="no_time_txt">--:--</string>
+    <string name="not_available_txt">غير متاح</string>
+    <string name="last_trasaction_txt">آخر حركة</string>
+    <string name="you_are_in_txt">اول دخول</string>
+    <string name="you_are_out_txt">آخر خروج</string>
+    <string name="exp_out_txt">الخروج المتوقع:</string>
+    <string name="work_mode_txt">وضع العمل</string>
+    <string name="location_txt">الموقع</string>
+    <string name="distance_txt">المسافة:</string>
+    <string name="attendance_txt">الحضور</string>
+    <string name="self_service_txt">الخدمة الذاتية</string>
+    <string name="employee_requests_txt">طلبات الموظفين</string>
+    <string name="summary_txt">الملخص</string>
+    <string name="calender_txt">التقويم</string>
+    <string name="dashboard_txt">لوحة القياس</string>
+    <string name="reports_txt">التقارير</string>
+    <string name="sunrise_time_txt">07:01</string>
+    <string name="sunset_time_txt">18:12</string>
+    <string name="delay_title_txt">لديك تأخير اليوم!</string>
+    <string name="violation_time_txt">09:00 AM - 09:20 AM</string>
+    <string name="duration_home_txt">المدة:</string>
+    <string name="duration_time_txt">20 دقيقة</string>
+    <string name="request_manual_entry_btn_txt">طلب إدخال يدوي</string>
+    <string name="request_permission_btn_txt">طلب مغادرة</string>
+    <string name="you_have_no_violations_txt">ليس لديك أي مخالفات</string>
+    <string name="your_are_punctual_txt">أنت دقيق في مواعيدك.</string>
+    <string name="thank_you_txt">شكراً لك.</string>
+    <string name="day_txt">الأربعاء</string>
+    <string name="semicolon_txt">:</string>
+    <string name="timer_txt">المؤقت</string>
+    <string name="date_time_txt">تاريخ _ وقت</string>
+    <string name="sign_out_layout_txt">تسجيل الخروج</string>
+    <string name="advance_punch_layout_txt">بصمة متقدمة</string>
+    <string name="date_and_time_atendaceScreen_txt"><![CDATA[التاريخ والوقت]]></string>
+    <string name="work_location_txt">موقع</string>
+    <string name="no_record_found_txt">لا يوجد سجل!</string>
+    <string name="no_record_found_txt_admin">No Record Found!</string>
+    <string name="no_record_found_txt_new">لا يوجد سجل!</string>
+
+    <string name="date_txt">تاريخ</string>
+    <string name="date_hint_txt">تاريخ</string>
+    <string name="time_txt">الوقت</string>
+    <string name="select_permission_txt">حدد الإذن</string>
+    <string name="is_full_day_txt">يوم عمل كامل</string>
+    <string name="is_flexible_txt">"وقت مرن ؟  "</string>
+
+
+    <string name="is_for_period_txt">مغادرة لفترة ؟</string>
+    <string name="from_date_txt">من تاريخ</string>
+    <string name="to_date_txt">إلى تاريخ</string>
+    <string name="from_time_txt">من وقت</string>
+    <string name="to_time_txt">"إلى وقت "</string>
+    <string name="upload_attachment_txt">رفع مرفقات</string>
+    <string name="upload_file_txt">رفع ملف</string>
+    <string name="capture_txt">Capture</string>
+    <string name="file_name_txt">إسم الملف</string>
+    <string name="remarks_txt">الملاحظات</string>
+    <string name="send_txt">إرسال</string>
+    <string name="cancel_txt">إلغاء</string>
+    <string name="total_delay_txt">إجمالي التأخير</string>
+    <string name="one_hour_time_txt">1h 30m</string>
+    <string name="total_early_out_txt">إجمالي الخروج المبكر</string>
+    <string name="total_lost_time_txt">إجمالي الوقت الضائع</string>
+    <string name="total_absent">إجمالي الغياب</string>
+    <string name="remaining_time_of_personal_permission">الوقت المتبقي من المغادرة الشخصية</string>
+    <string name="total_missing_in_txt">إجمالي عدم تسجيل الدخول</string>
+    <string name="total_missing_out_txt">إجمالي عدم تسجيل الخروج</string>
+    <string name="time_of_not_completing_work_hours_txt">إجمالي عدم إكمال ساعات العمل</string>
+    <string name="leaves_txt">الإجازات</string>
+    <string name="permissions_txt">المغادرات</string>
+    <string name="nursing_permission_txt">مغادرة الرضاعة</string>
+    <string name="study_permission_txt">مغادرة الدراسة</string>
+    <string name="holiday_txt">العطل الرسمية</string>
+    <string name="absent_txt">غياب</string>
+    <string name="violations_txt">المخالفات</string>
+    <string name="rest_day_txt">يوم إستراحة</string>
+    <string name="employee_name_txt">Test</string>
+    <string name="search_hint_txt">بحث...</string>
+    <string name="content_txt">المحتوى</string>
+    <string name="advance_punch_txt">خروج رسمي</string>
+    <string name="old_password_txt">كلمة المرور القديمة</string>
+    <string name="old_password_hint_txt">كلمة المرور القديمة</string>
+    <string name="new_password_txt">كلمة المرور الجديدة</string>
+    <string name="new_password_hint_txt">كلمة المرور الجديدة</string>
+    <string name="confirm_new_password_txt">تأكيد كلمة المرور</string>
+    <string name="confirm_new_password_hint_txt">تأكيد كلمة المرور</string>
+    <string name="send_btn_txt">إرسال</string>
+
+    <string name="details_information_txt">التفاصيل</string>
+    <string name="count_txt">120</string>
+    <string name="success_txt">Success</string>
+    <string name="success_new_txt">Success</string>
+    <string name="details_txt">التفاصيل</string>
+    <string name="permission_txt">مغادرة</string>
+    <string name="status_txt">الحالة</string>
+    <string name="request_date_txt">تاريخ الطلب</string>
+    <string name="approve_txt">قبول</string>
+    <string name="reject_txt">رفض</string>
+
+    <string name="virtually_from_anywhere">إفتراضي من أي مكان</string>
+    <string name="dynamic_calendar">التقويم الديناميكي</string>
+    <string name="track_and_view_summary_with_an">تتبع وعرض الملخص</string>
+    <string name="interactive_calender">التقويم التفاعلي</string>
+    <string name="automatically_gets_the_location_of_the">يتم أخذ الموقع  بشكل اوتوماتيكي من</string>
+    <string name="user_to_mark_attandence">تسجيل حضور الموظف</string>
+    <string name="interactive_reports">التقارير التفاعلية</string>
+    <string name="view_summary_with_real_time">عرض الملخص مع الوقت الفعلي</string>
+    <string name="interactive_reports_small_txt">التقارير التفاعلية</string>
+
+    <string name="employee_daily_report">التقرير اليومي للموظف</string>
+
+    <string name="duration_txt">المدة</string>
+    <string name="permissions">المغادرات</string>
+    <string name="announcements">الإعلانات</string>
+    <string name="admin_self_services">خدمات المسؤول</string>
+    <string name="company">الشركة</string>
+    <string name="work_group">مجموعة العمل</string>
+    <string name="work_locations">مواقع العمل</string>
+
+    <string name="content">المحتوى</string>
+    <string name="employees">الموظفين</string>
+    <string name="request_date">تاريخ الطلب</string>
+    <string name="duration">المدة</string>
+
+    <string name="you_have_delay_txt">"لديك تأخير اليوم "</string>
+
+    <string name="out_time_txt">وقت الخروج:</string>
+
+
+    <string name="in_time_txt">وقت الدخول:</string>
+    <string name="early_out_txt">لديك خروج مبكر</string>
+    <string name="out_duration_txt">"لديك مخالفة خروج اليوم"</string>
+    <string name="remote_work_txt">العمل عن بعد</string>
+    <string name="romers_txt">التجوال</string>
+    <string name="user_name_txt">"إسم المستخدم "</string>
+    <string name="car_punch_in_txt">خاصية مواقف السيارات</string>
+    <string name="meters_txt">متر</string>
+    <string name="spoof_detect_txt">You are using spoofed loc</string>
+    <string name="from_date_colon_txt">من تاريخ:</string>
+    <string name="to_date_colon_txt">إلى تاريخ:</string>
+    <string name="leave_request_txt">طلب إجازة</string>
+    <string name="none_txt">"لا يوجد "</string>
+    <string name="from_time_colon">من وقت:</string>
+    <string name="to_time_txt_colon">إلى وقت :</string>
+    <string name="update_permission_txt">"التعديل على طلب المغادرة "</string>
+    <string name="permission_colon_txt">المغادرة:</string>
+    <string name="update_leave_request_txt">التعديل على طلب الإجازة</string>
+    <string name="leave_colon_txt">الإجازة:</string>
+    <string name="update_manual_entry_request_txt">"التعديل على طلب الإدخال اليدوي "</string>
+    <string name="manual_entry_colon_txt">الإدخال اليدوي:</string>
+    <string name="leave_type_txt">نوع الإجازة</string>
+    <string name="advance_punch">بصمة متقدمة</string>
+    <string name="biometric_cnfrm_txt">لم يتم تسجيل البصمة، هل تريد التسجيل الآن؟</string>
+    <string name="select_all">تحديد الكل</string>
+    <string name="dismiss_txt">إلغاء</string>
+    <string name="yes_txt">نعم</string>
+    <string name="no_txt">لا</string>
+    <string name="sure_txt">هل أنت متأكد من تسجيل الخروج؟</string>
+    <string name="language_txt">اللغة</string>
+    <string name="english_txt">English</string>
+    <string name="arabic_txt">العربية</string>
+
+    <string name="enable_fingerprint_txt">تفعيل بصمة الإصبع</string>
+    <string name="rate_the_app_txt">قيّم التطبيق</string>
+    <string name="change_pswrd_txt">تغيير كلمة السر</string>
+    <string name="app_version_txt">إصدار التطبيق</string>
+    <string name="two_point_zero_txt">2.0</string>
+    <string name="customer_short_name_txt">الإسم القصير للمستخدم</string>
+    <string name="title_txt">اللقب</string>
+    <string name="design_txt">المسمى الوظيفي</string>
+    <string name="_9_txt">9</string>
+    <string name="_2_txt">2</string>
+    <string name="out_of_office_txt">خارج المكتب</string>
+    <string name="customer_name_txt">إسم العميل</string>
+    <string name="you_have_missing_in_txt">لقد فاتك تسجيل الدخول</string>
+
+    <string name="missed_out_transaction_txt">لقد فاتك تسجيل الخروج</string>
+    <string name="save">حفظ</string>
+    <string name="employee_number">رقم الموظف</string>
+    <string name="entity">وحدة العمل</string>
+    <string name="text_eighty_no">80</string>
+    <string name="delay_02_34_txt">التأخير: 02:34</string>
+    <string name="date_text">08/11/2023</string>
+    <string name="emp_status_txt">حالة_الموظف</string>
+
+    <string name="phone_num_txt">+962–6-5338565</string>
+
+    <string name="employee_name">اسم الموظف</string>
+    <string name="employee_no_1">رقم الموظف</string>
+    <string name="alert_dialogue_txt">أنت</string>
+    <string name="ok">حسناً</string>
+    <string name="product">منتج</string>
+    <string name="organisation">المرخص لها:</string>
+    <string name="transaction_date">تاريخ الحضور</string>
+    <string name="period_txt">وقت الخروج:</string>
+    <string name="full_day_txt">يوم عمل كامل</string>
+    <string name="finish_txt">إغلاق</string>
+    <string name="leave_days_txt">الاجازات</string>
+    <string name="violation_days_txt">المخالفات</string>
+    <string name="absent_days_txt">الغياب</string>
+    <string name="normal_attendance_txt">الحضور</string>
+    <string name="rest_days_txt">ايام الراحة</string>
+    <string name="remote_work_req_txt">العمل عن بعد معلق</string>
+    <string name="leave_pending_txt">(المغادرة (معلقة</string>
+    <string name="touch_id_txt">بصمة</string>
+    <string name="smartai_email_txt">smartai.dev</string>
+    <string name="invalid_datetime_text">تنسيق التاريخ أو الوقت غير صحيح</string>
+    <string name="date_validation">يرجى التأكد من التاريخ أقل من أو يساوي التاريخ</string>
+    <string name="response_no_record_found_txt">لم يتم العثور على بيانات!</string>
+    <string name="response_error_txt">Error</string>
+    <string name="employee_request_txt">طلبات الموظفين </string>
+
+    <string name="complains_txt">شكاوي</string>
+    <string name="select_company">الرجاء اختيار الهيئة</string>
+    <string name="select_permission">حدد الإذن</string>
+    <string name="every_day_counts">Every Minute Counts!</string>
+    <string name="go_tawajud">Go TAWAJUD</string>
+    <string name="hi">أهلاً</string>
+    <string name="violations">المخالفات</string>
+    <string name="applied">الطلبات المقدمة</string>
+    <string name="requests">طلب جديد</string>
+    <string name="skip">تخطي</string>
+
+    <string name="fragment_title_emp_perm">مغادرات الموظف</string>
+    <string name="Calendar">التقويم</string>
+    <string name="prompt_email">البريد الإلكتروني</string>
+    <string name="error_invalid_password">كلمة المرور قصيرة جدًا</string>
+    <string name="employee_profile">ملف تعريف الموظف</string>
+    <string name="valid_for_txt">"صالحة ل:"</string>
+    <string name="fingerprint_message">قم بتأكيد البصمة للمتابعة</string>
+    <string name="employee_no">رقم الموظف</string>
+    <string name="employee_card_no">رقم بطاقة الموظف</string>
+    <string name="user_id">معرف المستخدم</string>
+    <string name="role">الدور</string>
+
+    <string name="manager">مدير</string>
+    <string name="schedule">الجدول</string>
+    <string name="entity_name">وحدة العمل</string>
+    <string name="join_date">"تاريخ الانضمام"</string>
+    <string name="grade">المستوى</string>
+    <array name="select">
+        <item>الرجاء الاختيار</item>
+
+    </array>
+    <string name="new_cnfrm_pswrd_error">يجب على كلمتين المرور أن يتطابقا</string>
+    <string name="complain_amp_suggestion_txt"><![CDATA[الشكاوى والاقتراحات]]></string>
+    <string name="complaints_suggestion_txt"><![CDATA[الشكاوى والاقتراحات]]></string>
+
+    <string name="biometric_not_available">البصمة غير متوفرة</string>
+    <string name="fingerprint_authentication">المصادقة على بصمة الأصبع</string>
+    <string name="finger_on_sensor">ضع إصبعك على المستشعر للمصادقة</string>
+    <string name="view_more">عرض المزيد</string>
+    <string name="out_of_office">خارج المكتب</string>
+    <string name="not_allowed"> لا يسمح لك بالمضي قدما في البصمة</string>
+    <string name="not_allowed_new">عذراً! أنت %.2f متر خارج نطاق العمل</string>
+
+    <string name="fragment_title_emp_anouncemnt">الإعلانات</string>
+    <string name="self_dashboard_txt">لوحة التحكم الذاتية</string>
+    <string name="manager_dashboard_txt">لوحة تحكم المدير</string>
+    <string name="admin_dashboard_txt">لوحة تحكم المشرف</string>
+        <string name="info">معلومات</string>
+    <string name="license_end_date">تاريخ انتهاء الترخيص</string>
+
+    <string name="self_reports">التقارير الذاتية</string>
+    <string name="manager_reports">تقارير المدير</string>
+    <string name="admin_reports">تقارير المشرف</string>
+    <string name="select">الرجاء الإختيار</string>
+    <string name="profile">حساب تعريفي</string>
+    <string name="company_txt">الشركة</string>
+    <string name="copyright_txt">جميع الحقوق محفوظة لـ أمان لتقنية المعلومات - (2024) @ - الأردن</string>
+    <string name="pawrd_icorrect">كلمة المرور التي قمت بإدخالها خاطئة</string>
+    <string name="mail_txt">للدعم الفني: info@aman-me.com</string>
+    <string name="website_txt">www.aman-me.com</string>
+    <string name="company_name_txt">مُشغَّل بواسطة : Aman Information Systems</string>
+    <string name="title_contact">تواصل معنا</string>
+    <string name="choose_your_theme">إختر السمة التي تناسبك</string>
+    <string name="not_allowed_out">عذرا! لا يسمح بعمل بصمة خروج</string>
+    <string name="hr">الموارد البشرية</string>
+    <string name="email_exist_txt">Email Exists</string>
+    <string name="email_not_exist_txt">Email Not Found</string>
+    <string name="not_registered">الشركة الخاصة بك غير مسجلةn\يرجى التواصل مع البريد : info@aman-me.com للمزيد من المعلومات.</string>
+    <string name="select_leave_txt">حدد الإجازة</string>
+    <string name="select_manual_entry_txt">حدد الإدخال اليدوي</string>
+    <string name="please_wait">انتظر من فضلك....</string>
+    <string name="please_click_again">يرجى الضغط مرة اخرى للخروج</string>
+
+
+    <string name="download_plz_wait_txt">يتم تحميل الملف. يرجى الإنتظار...</string>
+    <string name="download_successfully_txt">تم تحميل ملف الـ PDF بنجاح إلى:</string>
+    <string name="download_error_for_pdf_txt">فشل تحميل ملف الـ PDF، خطأ.</string>
+
+    <string name="report_too_long">التقرير كبير جداً، يرجى المحاولة عن طريق نظام الحضور والإنصراف</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+
+    <string name="location_access_description"> تواجد يتطلب وجود موقع عمل للمستخدم لإتاحة الإمكانية لعمل بصمة دخول أو خروج. تواجد لا يقوم بتتبع أو تخزين موقع المستخدم عند القيام بعمل حركة دخول أو خروج.
+</string>
+
+    <string name="version_alert">هذا الإصدار غير مدعوم حالياً، يرجى تحديث التطبيق لآخر إصدار للتمكن من إستعمال التطبيق</string>
+    <string name="old_new_pswd">قمت بإدخال نفس كلمة المرور</string>
+    <string name="adv_punch_access">لا يُسمح بإستخدام الحركات المتقدمة</string>
+
+
+    <string name="out_location_1"> نأسف! أنت بعيد </string>
+    <string name="out_location_2">عن موقع العمل</string>
+
+    <string name="enable_device_location"> يرجى تفعيل تحديد الموقع في الهاتف</string>
+    <string name="warning_spoof_loc">Warning you are using a spoofed location App</string>
+
+    <string name="transaction_already_exists">الحركة موجودة بالفعل</string>
+
+
+</resources>

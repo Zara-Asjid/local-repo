@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "290041183540",
+    "project_id": "tawajudpremiumplusnewfeatured",
+    "storage_bucket": "tawajudpremiumplusnewfeatured.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290041183540:android:675997e1c7f1076c65b961",
+        "android_client_info": {
+          "package_name": "com.sait.tawajudpremiumplusnewfeatured"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASbck8xrNtbzVlJ5ECck5JHGWWuwArelQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

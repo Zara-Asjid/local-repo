@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+
+        android:id="@+id/progressOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:alpha="0.5"
+        android:background="@color/white"
+        android:clickable="true"
+        android:elevation="@dimen/_3sdp"
+        android:focusable="true"
+      >
+
+
+        <!--
+          android:alpha="0.4"
+        android:background="@color/grey_lighter"
+        -->
+<!--
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/colorPrimary" />
+-->
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/tawajud"
+            android:layout_gravity="center"
+            android:tint="?attr/themecolor"
+            android:visibility="visible"
+
+            />
+
+    </FrameLayout>
+
+    <include
+        layout="@layout/toolbar"
+        android:visibility="gone"
+
+        android:id="@+id/layout" />
+
+
+
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_below="@+id/layout"
+
+
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="?attr/themecolor"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"
+        android:visibility="gone"
+        app:itemIconTint="@color/tab_selection"
+        app:labelVisibilityMode="unlabeled"
+
+
+        />
+
+
+    <!--
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu"/>
+
+    -->
+
+
+</RelativeLayout>

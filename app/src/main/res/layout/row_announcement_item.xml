@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp"
+    swipe:leftEdgeSwipeOffset="0dp"
+
+    swipe:rightEdgeSwipeOffset="0dp">
+
+
+    <!-- Top View,  Row itemView of RecyclerView -->
+    <RelativeLayout
+
+        android:id="@+id/rel_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/lightgreen_rounded_rectangle"
+        swipe:layout_constraintBottom_toBottomOf="parent"
+        swipe:layout_constraintStart_toStartOf="parent"
+        swipe:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/lin_data"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="?android:selectableItemBackground"
+            android:elevation="@dimen/_4sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/robotocondensed_bold"
+                    android:text="@string/title_txt"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <TextView
+                    android:id="@+id/txt_announcementdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/txt_title"
+                    android:fontFamily="@font/robotocondensed_regular"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_10ssp" />
+
+
+                <ImageView
+                    android:id="@+id/img_expand"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:src="?attr/send_back" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:fontFamily="@font/robotocondensed_regular"
+                android:text="@string/content_txt"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

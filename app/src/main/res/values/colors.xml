@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+
+
+    <color name="color_violet">#4477ec</color>
+    <color name="color_blue">#009ecb</color>
+    <color name="color_gold">#d4af37</color>
+    <color name="color_green">#5B9322</color>
+
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorAppLabel">#FFFFFF</color>
+
+
+    <color name="blacklight">#7A8490</color>
+
+    <color name="grey_light">#D3D3D3</color>
+
+
+
+    <color name="gray">#5f5858</color>
+
+
+    <color name="black">#0e1a07</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+       <color name="greenlight">#d2e692</color>
+
+
+        <color name="green">#5b9423</color>
+
+
+
+    <color name="skybluelight">#dae2ef</color>
+
+    <color name="color_skyblue">#64B6E6</color>
+
+
+
+  <color name="brownlight">#f7f4f2</color>
+
+    <color name="color_brown">#ab907a</color>-
+    <color name="brown">#978D75</color>
+
+
+
+    <color name="green_bar">#4BC57A</color>
+    <color name="red">#ff0000</color>
+    <color name="yellow">#D5A92E</color>
+    <color name="purple">#8C2A8F</color>
+    <color name="skyblue">#71B4DA</color>
+
+
+<color name="xyz">#E1C887</color>
+    <color name="blue_attendance">#169B96</color>
+    <color name="sky_blue_attendance">#009ecb</color>
+    <color name="mustard_attendance">#ff9001</color>
+    <color name="green_attendance">#1d9a00</color>
+    <color name="red_attendance">#ff0000</color>
+    <color name="purple_attendance">#7000be</color>
+
+
+
+
+    <color name="white_trans">#E7E7E7</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey_dark">#454545</color>
+    <color name="grey">#9b9b9b</color>
+    <color name="opac_grey">#779B9B9B</color>
+    <color name="grey_lighter">#d7d7d7</color>
+
+
+    <color name="grey_lightest">#F0F0F0</color>
+
+    <color name="mdtp_accent_color">#009688</color>
+    <color name="mdtp_accent_color_dark">#00796b</color>
+
+
+    <color name="app_color">#29435c</color>
+    <color name="txt_black">#282828</color>
+    <color name="txt_grey">#B1B1B1</color>
+
+
+    <color name="light_yellow">#C4B65E</color>
+
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+
+    <color name="text_color_themed">#64B6E6</color> <!--29435C-->
+    <color name="summary_color_1">#ff29435C</color>
+    <color name="summary_color_2">#B329435C</color>
+    <color name="summary_color_3">#8029435C</color>
+    <color name="progress_back">#ACACAF</color><!--D6D6D8-->
+
+
+    <color name="event_permissions">#D5A92E</color>
+    <color name="event_nursing_permissions">#8C2A8F</color>
+    <color name="event_study_permissions">#978D75</color>
+    <color name="event_holiday">#4BC57A</color>
+    <color name="event_absent">#9F0F19</color>
+    <color name="event_violations">#E26367</color>
+    <color name="event_rest_day">#6D6B6B</color>
+    <color name="landing_title">#C13353</color>
+
+    <color name="gradient_red">#64B6E6</color> <!--AC3C63-->
+    <color name="gradient_blue_dull">#d9e1f0</color>
+    <color name="gradient_red_dull">#eed8e0</color>
+
+
+
+
+
+
+
+    <!--   Theme 2 -->
+
+
+
+    <color name="colorAccent1">#FF4081</color>
+    <color name="red1">#ad833a</color>
+    <color name="green1">#4CAF50</color>
+
+
+    <color name="text_color_title1">#ad833a</color>
+    <color name="title_light1">#434343</color>
+    <color name="text_color_themed1">#ad833a</color>
+    <color name="text_color_themed1_dull">#DDD8BF92</color>
+
+    <color name="white1">#D1A9A9</color>
+    <color name="black1">#C76262</color>
+    <color name="transparent1">#00000000</color>
+    <color name="grey_dark1">#454545</color>
+    <color name="grey1">#9b9b9b</color>
+    <color name="grey_lighter1">#413333</color>
+    <color name="gift_indicator_inactive1">#3B4E64</color>
+    <color name="grey_lightest1">#AD1D1D</color>
+
+    <color name="mdtp_accent_color1">#4CBBB1</color>
+    <color name="mdtp_accent_color_dark1">#0A2724</color>
+
+
+    <color name="app_color1">#5F778D</color>
+    <color name="txt_black1">#854E4E</color>
+    <color name="txt_grey1">#B1B1B1</color>
+
+    <color name="yellow1">#534D1A</color>
+    <color name="light_yellow1">#E6CB22</color>
+
+    <color name="radio_button_selected_color1">#206E8B</color>
+
+    <color name="summary_color1">#050A0F</color>
+    <color name="summary_color_11">#243F58</color>
+    <color name="summary_color_21">#B31D3246</color>
+    <color name="summary_color_31">#801E3246</color>
+    <color name="progress_back1">#979799</color><!--D6D6D8-->
+
+
+    <color name="event_permissions1">#B99329</color>
+    <color name="event_nursing_permissions1">#521953</color>
+    <color name="event_study_permissions1">#7A725F</color>
+    <color name="event_holiday1">#3AA261</color>
+    <color name="event_absent1">#7A0F17</color>
+    <color name="event_violations1">#E26367</color>
+    <color name="event_rest_day1">#6D6B6B</color>
+    <color name="landing_title1">#9C2641</color>
+
+    <color name="gradient_red1">#AC3C63</color>
+
+
+
+
+
+
+    <color name="colorAccent2">#D6336B</color>
+    <color name="red2">#B42222</color>
+    <color name="green2">#37803A</color>
+
+    <color name="white2">#B19393</color>
+    <color name="black2">#9B4F4F</color>
+    <color name="transparent2">#00000000</color>
+    <color name="grey_dark2">#241515</color>
+    <color name="grey2">#5C3838</color>
+    <color name="grey_lighter2">#413333</color>
+    <color name="gift_indicator_inactive2">#2B3B4D</color>
+    <color name="grey_lightest2">#921313</color>
+
+    <color name="mdtp_accent_color2">#2A5C57</color>
+    <color name="mdtp_accent_color_dark2">#1C423E</color>
+
+
+    <color name="app_color2">#4F6375</color>
+    <color name="txt_black2">#854E4E</color>
+    <color name="txt_grey2">#B1B1B1</color>
+
+    <color name="yellow2">#3D3914</color>
+    <color name="light_yellow2">#776912</color>
+
+    <color name="radio_button_selected_color2">#1C5E77</color>
+
+    <color name="summary_color2">#050A0F</color>
+    <color name="summary_color_12">#243F58</color>
+    <color name="summary_color_22">#B31D3246</color>
+    <color name="summary_color_32">#801E3246</color>
+    <color name="progress_back2">#979799</color><!--D6D6D8-->
+
+
+    <color name="event_permissions2">#B99329</color>
+    <color name="event_nursing_permissions2">#521953</color>
+    <color name="event_study_permissions2">#7A725F</color>
+    <color name="event_holiday2">#3AA261</color>
+    <color name="event_absent2">#7A0F17</color>
+    <color name="event_violations2">#E26367</color>
+    <color name="event_rest_day2">#6D6B6B</color>
+    <color name="landing_title2">#9C2641</color>
+
+    <color name="gradient_red2">#AC3C63</color>
+
+
+
+
+    <!--   Theme 4 -->
+    <color name="colorAccent3">#A8506E</color>
+    <color name="red3">#B42222</color>
+    <color name="green3">#37803A</color>
+
+    <color name="white3">#B19393</color>
+    <color name="black3">#9B4F4F</color>
+    <color name="transparent3">#00000000</color>
+    <color name="grey_dark3">#241515</color>
+    <color name="grey3">#5C3838</color>
+    <color name="grey_lighter3">#413333</color>
+    <color name="gift_indicator_inactive3">#2B3B4D</color>
+    <color name="grey_lightest3">#921313</color>
+
+    <color name="mdtp_accent_color3">#2A5C57</color>
+    <color name="mdtp_accent_color_dark3">#1C423E</color>
+
+
+    <color name="app_color3">#4F6375</color>
+    <color name="txt_black3">#854E4E</color>
+    <color name="txt_grey3">#B1B1B1</color>
+
+    <color name="yellow3">#3D3914</color>
+    <color name="light_yellow3">#776912</color>
+
+    <color name="radio_button_selected_color3">#1C5E77</color>
+
+    <color name="summary_color3">#050A0F</color>
+    <color name="summary_color_13">#243F58</color>
+    <color name="summary_color_23">#B31D3246</color>
+    <color name="summary_color_33">#801E3246</color>
+    <color name="progress_back3">#979799</color><!--D6D6D8-->
+
+
+    <color name="event_permissions3">#B99329</color>
+    <color name="event_nursing_permissions3">#521953</color>
+    <color name="event_study_permissions3">#7A725F</color>
+    <color name="event_holiday3">#3AA261</color>
+    <color name="event_absent3">#7A0F17</color>
+    <color name="event_violations3">#E26367</color>
+    <color name="event_rest_day3">#6D6B6B</color>
+    <color name="landing_title3">#9C2641</color>
+
+    <color name="gradient_red3">#AC3C63</color>
+
+
+
+
+    <color name="theme_one_text">#F9EE68</color>
+    <color name="theme_one_button_bg">#F2A660</color>
+    <color name="theme_one_button_text">#B83B5E</color>
+    <color name="theme_one_status_bar">#6A2C6F</color>
+
+
+    <color name="theme_two_text">#08D9D6</color>
+    <color name="theme_two_button_bg">#252B35</color>
+    <color name="theme_two_button_text">#FF2E62</color>
+    <color name="theme_two_status_bar">#EAEAEA</color>
+
+
+    <color name="theme_three_text">#47466C</color>
+    <color name="theme_three_button_bg">#3D83A8</color>
+    <color name="theme_three_button_text">#45CDCF</color>
+    <color name="theme_three_status_bar">#ABEED8</color>
+
+
+    <color name="theme_four_text">#00B9A9</color>
+    <color name="theme_four_button_bg">#F8F3D5</color>
+    <color name="theme_four_button_text">#F7416C</color>
+    <color name="theme_four_status_bar">#FFDE7D</color>
+    <color name="default_bg">#FFFFFFFF</color>
+
+
+
+
+  <color name="btn_blue3">#354877</color>
+    <color name="event_Leaves3">#2C4474</color>
+    <color name="btn_blue2">#354877</color>
+    <color name="event_Leaves2">#2C4474</color>
+    <color name="btn_blue1">#354877</color>
+    <color name="gradient_blue1">#335597</color>
+    <color name="event_Leaves1">#2C4474</color>
+    <color name="btn_blue">#4365b3</color>
+    <color name="gradient_blue">#3F67B6</color>
+    <color name="event_Leaves">#4167B0</color>
+    <color name="gift_indicator_inactive">#5b96d8</color>
+    <color name="blue">#4167B0</color>
+    <color name="gradient_blue2">#335597</color>
+    <color name="gradient_blue3">#335597</color>
+
+    <color name="grey_attendance">#B4B4B4</color>
+
+
+</resources>

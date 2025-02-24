@@ -1,0 +1,143 @@
+<resources>
+
+        <attr name="app_icon" format="reference" />
+        <attr name="bg" format="reference" />
+        <attr name="theme_settings" format="reference" />
+        <attr name="policy" format="reference" />
+
+        <attr name="logo" format="reference" />
+        <attr name="announcement" format="reference" />
+        <attr name="app_version" format="reference" />
+        <attr name="attendance" format="reference" />
+        <attr name="attendance_screen" format="reference" />
+
+        <attr name="attendance_splash" format="reference" />
+        <attr name="badweathr" format="reference" />
+        <attr name="calendar" format="reference" />
+        <attr name="calendar_screen" format="reference" />
+        <attr name="calendar_splash" format="reference" />
+        <attr name="change_password" format="reference" />
+        <attr name="complaints" format="reference" />
+        <attr name="dashboard_bg" format="reference" />
+        <attr name="dashboard_new" format="reference" />
+        <attr name="dynamic_flow_screen" format="reference" />
+        <attr name="empl_perf_splash" format="reference" />
+
+        <attr name="employee_profile_icon" format="reference" />
+        <attr name="fingerprint" format="reference" />
+        <attr name="h_back" format="reference" />
+        <attr name="info_contact" format="reference" />
+        <attr name="language" format="reference" />
+        <attr name="logo_vertical" format="reference" />
+        <attr name="managericon" format="reference" />
+        <attr name="message" format="reference" />
+        <attr name="password_login" format="reference" />
+        <attr name="password" format="reference" />
+
+        <attr name="send_back" format="reference" />
+        <attr name="permission_splash" format="reference" />
+        <attr name="phone_svg" format="reference" />
+        <attr name="rate" format="reference" />
+        <attr name="report" format="reference" />
+        <attr name="rolebased_screen" format="reference" />
+        <attr name="selfservice" format="reference" />
+        <attr name="selfservice_new" format="reference" />
+        <attr name="send" format="reference" />
+
+
+        <attr name="summary" format="reference" />
+        <attr name="emp_profile_icon" format="reference" />
+        <attr name="report_splash" format="reference" />
+
+        <attr name="user" format="reference" />
+        <attr name="website" format="reference" />
+
+
+
+
+        <attr name="themecolor" format="reference" />
+        <attr name="themecolorlight" format="reference" />
+        <attr name="themecolorlightlogin" format="reference" />
+
+        <attr name="rb" format="reference" />
+        <attr name="rb_fill" format="reference" />
+        <attr name="lb" format="reference" />
+        <attr name="lb_fill" format="reference" />
+
+
+        <attr name="bgtop" format="reference" />
+        <attr name="check_in" format="reference" />
+        <attr name="check_out" format="reference" />
+        <attr name="check_adv" format="reference" />
+        <attr name="check_in_out" format="reference" />
+        <attr name="icon_language" format="reference" />
+        <attr name="icon_suggestions" format="reference" />
+        <attr name="icon_fingerprint" format="reference" />
+        <attr name="icon_rate" format="reference" />
+        <attr name="profileimage" format="reference" />
+        <attr name="rounded_blue_" format="reference" />
+        <attr name="callicon" format="reference" />
+        <attr name="messageicon" format="reference" />
+        <attr name="web_icon" format="reference" />
+        <attr name="locationicon" format="reference" />
+
+        <attr name="color_header_bar_start" format="reference" />
+        <attr name="progress_dull_red" format="reference" />
+        <attr name="progress_dull_blue" format="reference" />
+        <attr name="progress_red" format="reference" />
+        <attr name="progress_blue" format="reference" />
+
+        <attr name="color_header_bar_end" format="reference" />
+        <attr name="text_color" format="reference" />
+        <attr name="text_color_title" format="reference" />
+        <attr name="text_color_highlight" format="reference" />
+        <attr name="text_color_highlight_date" format="reference" />
+        <attr name="text_color_highlight_time" format="reference" />
+        <attr name="text_color_title_light" format="reference" />
+        <attr name="text_color_title_themed" format="reference" />
+        <attr name="opac_grey_theme" format="reference" />
+        <attr name="text_color_navigation" format="reference" />
+        <attr name="text_color_title_themed_dark" format="reference" />
+        <attr name="color_header_title" format="reference" />
+        <attr name="color_bottom_nav" format="reference" />
+
+        <declare-styleable name="CvCameraPreview">
+
+                <attr name="camera_type" format="integer">
+                        <enum name="back" value="99" />
+                        <enum name="front" value="98" />
+                </attr>
+
+                <attr name="scale_type" format="integer">
+                        <enum name="fit" value="1" />
+                        <enum name="full" value="2" />
+                </attr>
+
+        </declare-styleable>
+
+        <!-- Declare custom theme attributes that allow changing which styles are
+             used for button bars depending on the API level.
+             ?android:attr/buttonBarStyle is new as of API 11 so this is
+             necessary to support previous API levels. -->
+        <declare-styleable name="ButtonBarContainerTheme">
+                <attr name="metaButtonBarStyle" format="reference" />
+                <attr name="metaButtonBarButtonStyle" format="reference" />
+        </declare-styleable>
+
+        <declare-styleable name="CustomTextView">
+                <attr name="customFont" format="string" />
+        </declare-styleable>
+
+        <declare-styleable name="CustomRadioButton">
+                <attr name="customFont2" format="string" />
+        </declare-styleable>
+
+        <declare-styleable name="CustomSwitch">
+                <attr name="customFont3" format="string" />
+        </declare-styleable>
+
+        <declare-styleable name="CustomCheckBoxButton">
+                <attr name="customFont4" format="string" />
+        </declare-styleable>
+
+</resources>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:background="?attr/themecolor"
+   >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:id="@+id/l_title_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_gravity="center"
+
+                android:layout_centerVertical="true"
+
+                android:src="?attr/h_back"
+              />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:fontFamily="@font/robotocondensed_regular"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:text="Title">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/l_user"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/ll_info">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+
+            android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:tint="@color/white"
+        android:background="@drawable/whitecircle_greenlightborder"
+
+ />
+
+            <TextView
+                android:id="@+id/txt_letter"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="?attr/themecolor"
+                android:textSize="@dimen/_25ssp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ScrollView
+            android:id="@+id/sl_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:scrollbarStyle="outsideOverlay">
+
+
+
+            <TextView
+                android:id="@+id/txt_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/robotocondensed_bold"
+                android:textSize="@dimen/_12ssp"
+                android:text="User name"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:lines="1">
+            </TextView>
+
+        </ScrollView>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_userdesignation"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="?attr/themecolorlight"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/sl_username"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:lines="1">
+
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+    </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/robotocondensed_bold"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_info"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/info"
+            app:tint="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_alert"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/bell"
+                app:tint="@color/white" />
+<!--
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:text="4"
+                android:layout_toEndOf="@+id/img_alert"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/red_rectangle_out"
+                android:textColor="@color/white"/>
+-->
+            <TextView
+                android:id="@+id/txt_announcement_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/img_alert"
+                android:layout_alignTop="@id/img_alert"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:text="9"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

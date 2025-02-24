@@ -1,0 +1,21 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="?attr/themecolor" />
+
+
+  <!--  <corners
+        android:radius="@dimen/_8sdp"
+        />-->
+
+    <corners
+        android:topRightRadius="@dimen/_8sdp"
+        android:bottomRightRadius="@dimen/_8sdp"
+        />
+
+    <stroke
+        android:width="3dp"
+        android:color="?attr/themecolor"
+        />
+
+</shape>

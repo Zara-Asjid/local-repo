@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical"
+
+    tools:context=".ui.register.RegisterActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+
+<!--
+    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+        android:id="@+id/dotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        app:dotsSize="8dp"
+        app:dotsSpacing="8dp"
+        app:dotsStrokeColor="@color/white"
+        app:dotsStrokeWidth="2dp"
+        app:dotsCornerRadius="4dp"
+        app:dotsStrokeDots="true"
+        app:dotsClickable="true"
+        app:dotsRadius="4dp"
+        app:dotsSelectedColor="@color/colorActiveDot"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+-->
+
+
+    <TextView
+        android:id="@+id/txt_skip"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/robotocondensed_bold"
+        android:textColor="?attr/themecolor"
+        android:text="@string/skip"/>
+
+
+</RelativeLayout>

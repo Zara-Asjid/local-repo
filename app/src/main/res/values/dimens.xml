@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">@dimen/_16sdp</dimen>
+    <dimen name="activity_vertical_margin">@dimen/_16sdp</dimen>
+    <dimen name="fab_margin">@dimen/_16sdp</dimen>
+    <dimen name="toolbar_menuitem_image_padding">@dimen/_12sdp</dimen>
+    <dimen name="toolbar_menuitem_text_padding">@dimen/_6sdp</dimen>
+    <dimen name="toolbar_menuitem_size">40dp</dimen>
+
+    <!--<dimen name="text_size_smallest">10sp</dimen>-->
+
+    <dimen name="text_size_smaller">@dimen/_12ssp</dimen>
+
+    <dimen name="text_size_small">@dimen/_14ssp</dimen>
+
+    <!--Pixels-->
+    <dimen name="x4dp">4dp</dimen>
+    <dimen name="x8dp">8dp</dimen>
+    <dimen name="x10dp">10dp</dimen>
+    <dimen name="x20dp">20dp</dimen>
+    <dimen name="viewpager_next_item_visible">26dp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">42dp</dimen>
+</resources>
