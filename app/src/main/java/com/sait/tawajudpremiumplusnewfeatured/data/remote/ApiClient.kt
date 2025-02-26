@@ -3,10 +3,12 @@ package com.sait.tawajudpremiumplusnewfeatured.data.remote
 import android.util.Log
 import com.google.gson.GsonBuilder
 import com.pixplicity.easyprefs.library.Prefs
+import com.sait.tawajudpremiumplusnewfeatured.TawajudApplication
 import com.sait.tawajudpremiumplusnewfeatured.util.Const
 import com.sait.tawajudpremiumplusnewfeatured.util.PrefKeys
 import com.sait.tawajudpremiumplusnewfeatured.util.preferences.PrefUtils.buildRequestLog
 import com.sait.tawajudpremiumplusnewfeatured.util.preferences.PrefUtils.buildResponseLog
+import com.sait.tawajudpremiumplusnewfeatured.util.preferences.UserShardPrefrences
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
@@ -134,7 +136,8 @@ object ApiClient {
             Log.d("API Request", requestLog)
 
             if (request.header("No-Authentication") == null) {
-                val token = Prefs.getString(PrefKeys.Auth_key, "")
+               // val token = Prefs.getString(PrefKeys.Auth_key, "")
+                val token = UserShardPrefrences.getLoginToken(TawajudApplication.getInstance().applicationContext)
                 if (!token.isNullOrEmpty()) {
                     val finalToken = "Bearer $token"
                     request = request.newBuilder()

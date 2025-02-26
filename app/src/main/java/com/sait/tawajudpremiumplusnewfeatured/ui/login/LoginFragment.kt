@@ -360,7 +360,8 @@ private var b_FromReStart:Boolean = false
                                     }
 
                                     //UserShardPrefrences.setisManager(this,loginData.data.isManager)
-                                    Prefs.putString(PrefKeys.Auth_key, loginData.data.token)
+                                   // Prefs.putString(PrefKeys.Auth_key, loginData.data.token)
+                                    UserShardPrefrences.setLoginToken(mContext,loginData.data.token)
 
                                     callNotificationTypeApi()
 

@@ -1,30 +1,28 @@
 package com.sait.tawajudpremiumplusnewfeatured.util.preferences
 
+import android.accounts.Account
+import android.accounts.AccountManager
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Build
-import android.preference.PreferenceManager
 import android.security.keystore.KeyGenParameterSpec
 import android.security.keystore.KeyProperties
-import android.util.Base64
-import android.util.Log
 import androidx.annotation.RequiresApi
-import androidx.core.content.edit
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKeys
 
 import com.google.gson.Gson
-import com.google.gson.JsonSyntaxException
 import com.google.gson.reflect.TypeToken
 import com.sait.tawajudpremiumplusnewfeatured.R
 import com.sait.tawajudpremiumplusnewfeatured.ui.login.models.LoginData
-import com.sait.tawajudpremiumplusnewfeatured.ui.login.models.NoficationTypesResponse
 import com.sait.tawajudpremiumplusnewfeatured.ui.login.models.NotificationData
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import java.io.File
+import java.io.FileOutputStream
 import java.nio.charset.Charset
 import java.security.KeyStore
 import java.util.Calendar
@@ -83,7 +81,23 @@ object UserShardPrefrences {
             return null
         }
     }
+
 */
+    fun saveUUIDInAccount(context: Context, uuid: String) {
+        val accountManager = AccountManager.get(context)
+        val account = Account("MyAppAccount", "com.sait.tawajudpremiumplusnewfeatured")
+        if (accountManager.addAccountExplicitly(account, null, null)) {
+            accountManager.setUserData(account, "device_uuid", uuid)
+        }
+    }
+
+    fun getUUIDFromAccount(context: Context): String? {
+        val accountManager = AccountManager.get(context)
+        val accounts = accountManager.getAccountsByType("com.sait.tawajudpremiumplusnewfeatured")
+        return accounts.firstOrNull()?.let {
+            accountManager.getUserData(it, "device_uuid")
+        }
+    }
     /**
      * Get or generate a persistent UUID.
      * Ensures the same UUID is used even after an OS update.
@@ -99,17 +113,81 @@ object UserShardPrefrences {
         setUUID(ctx, newUUID)
         return newUUID
     }
+    fun getOrCreateKeystoreUUID(context: Context): String {
+        val encryptedFile = getEncryptedFile(context)
+
+        // Check if the file exists — if yes, decrypt it
+        if (encryptedFile.exists()) {
+            return decryptUUIDFromFile(context)
+        }
+
+        // Generate a new UUID and store it securely
+        val newUUID = UUID.randomUUID().toString()
+        encryptAndStoreUUIDToFile(context,newUUID)
+        return newUUID
+    }
+
+    private fun getEncryptedFile(context: Context?): File {
+        val dir =  context!!.getExternalFilesDir(null) ?: context!!.filesDir
+        return File(dir, "encrypted_uuid.dat")
+    }
 
     /**
-     * Save UUID securely in EncryptedSharedPreferences.
+     * Encrypts a UUID and stores it in an encrypted file on external storage.
      */
+    private fun encryptAndStoreUUIDToFile(context: Context?,uuid: String) {
+        val keyGenerator = KeyGenerator.getInstance(KeyProperties.KEY_ALGORITHM_AES, "AndroidKeyStore")
+        keyGenerator.init(
+            KeyGenParameterSpec.Builder("unique_device_key", KeyProperties.PURPOSE_ENCRYPT or KeyProperties.PURPOSE_DECRYPT)
+                .setBlockModes(KeyProperties.BLOCK_MODE_GCM)
+                .setUserAuthenticationRequired(false)
+                .setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_NONE)
+                .build()
+        )
+        val secretKey = keyGenerator.generateKey()
+
+        val cipher = Cipher.getInstance("AES/GCM/NoPadding")
+        cipher.init(Cipher.ENCRYPT_MODE, secretKey)
+        val iv = cipher.iv
+        val encryptedUUID = cipher.doFinal(uuid.toByteArray(Charset.defaultCharset()))
+
+        val encryptedFile = getEncryptedFile(context)
+        FileOutputStream(encryptedFile).use { fos ->
+            fos.write(iv)
+            fos.write(encryptedUUID)
+        }
+    }
+
+    /**
+     * Decrypts the stored UUID from the encrypted file.
+     */
+    private fun decryptUUIDFromFile(context: Context): String {
+        val keyStore = KeyStore.getInstance("AndroidKeyStore").apply { load(null) }
+        val secretKey = keyStore.getKey("unique_device_key", null) as SecretKey
+
+        val encryptedFile = getEncryptedFile(context)
+        val fileData = encryptedFile.readBytes()
+        val iv = fileData.copyOfRange(0, 12) // GCM IV is 12 bytes
+        val encryptedUUID = fileData.copyOfRange(12, fileData.size)
+
+        val cipher = Cipher.getInstance("AES/GCM/NoPadding")
+        cipher.init(Cipher.DECRYPT_MODE, secretKey, GCMParameterSpec(128, iv))
+        return String(cipher.doFinal(encryptedUUID), Charset.defaultCharset())
+    }
     private fun setUUID(ctx: Context, uuid: String) {
         val editor = getEncryptedSharedPreferences().edit()
         editor.putString("unique_id", uuid).apply()
     }
-    /**
+ /*   *//**
+     * Save UUID securely in EncryptedSharedPreferences.
+     *//*
+    private fun setUUID(ctx: Context, uuid: String) {
+        val editor = getEncryptedSharedPreferences().edit()
+        editor.putString("unique_id", uuid).apply()
+    }
+    *//**
      * Generates or retrieves a UUID stored securely in Android Keystore.
-     */
+     *//*
     fun getOrCreateKeystoreUUID(context: Context): String {
         val keyStore = KeyStore.getInstance("AndroidKeyStore").apply { load(null) }
 
@@ -124,14 +202,15 @@ object UserShardPrefrences {
         }
     }
 
-    /**
+    *//**
      * Encrypts a UUID and stores it in SharedPreferences.
-     */
+     *//*
     private fun encryptAndStoreUUID(context: Context, uuid: String) {
         val keyGenerator = KeyGenerator.getInstance(KeyProperties.KEY_ALGORITHM_AES, "AndroidKeyStore")
         keyGenerator.init(
             KeyGenParameterSpec.Builder("unique_device_id", KeyProperties.PURPOSE_ENCRYPT or KeyProperties.PURPOSE_DECRYPT)
                 .setBlockModes(KeyProperties.BLOCK_MODE_GCM)
+                .setUserAuthenticationRequired(false)
                 .setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_NONE)
                 .build()
         )
@@ -148,9 +227,9 @@ object UserShardPrefrences {
             .apply()
     }
 
-    /**
+    *//**
      * Decrypts the stored UUID from Keystore.
-     */
+     *//*
     private fun decryptUUID(context: Context): String {
         val keyStore = KeyStore.getInstance("AndroidKeyStore").apply { load(null) }
         val secretKey = keyStore.getKey("unique_device_id", null) as SecretKey
@@ -162,7 +241,7 @@ object UserShardPrefrences {
         cipher.init(Cipher.DECRYPT_MODE, secretKey, GCMParameterSpec(128, iv))
         return String(cipher.doFinal(encryptedUUID), Charset.defaultCharset())
     }
-
+*/
    public fun saveUserInfo(ctx: Context?, userInfo: LoginData?) {
         CoroutineScope(Dispatchers.IO).launch {
             val editor = getEncryptedSharedPreferences()!!.edit()
@@ -902,6 +981,14 @@ object UserShardPrefrences {
     fun setisManager(context: Context?, b: Boolean): Boolean {
         return  getEncryptedSharedPreferences()!!.edit().putBoolean("isManager", b).commit()
 
+    }
+    fun setLoginToken(context: Context?, token: String): Boolean {
+        return getEncryptedSharedPreferences().edit().putString("login_token", token).commit()
+    }
+
+    fun getLoginToken(context: Context?): String {
+        val token = getEncryptedSharedPreferences().getString("login_token", "") // Default is empty string
+        return token ?: ""  // Ensure it returns an empty string if the token is null
     }
 
     fun getisHR(context: Context?): Boolean {
