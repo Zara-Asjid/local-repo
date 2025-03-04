@@ -206,7 +206,7 @@ object PrefUtils {
         sb.append("→→→→→→→→→→ REQUEST →→→→→→→→→→\n")
         sb.append("URL: ${request.url}\n")
         sb.append("Method: ${request.method}\n")
-        sb.append("Headers: ${request.headers}\n")
+        sb.append("Headers: \n${request.headers}\n")
 
         // Check if the request body is JSON and pretty print it
         request.body?.let { body ->

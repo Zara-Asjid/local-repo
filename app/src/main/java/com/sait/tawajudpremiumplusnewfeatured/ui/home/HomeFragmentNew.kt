@@ -109,6 +109,7 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
 import com.sait.tawajudpremiumplusnewfeatured.ui.announcements.adapter.AnnouncementAdapter
+import com.sait.tawajudpremiumplusnewfeatured.ui.dashboard.DashboardTesting
 import com.sait.tawajudpremiumplusnewfeatured.util.LocationServiceWorker
 import com.sait.tawajudpremiumplusnewfeatured.util.preferences.PrefUtils.isSpoofed
 import com.sait.tawajudpremiumplusnewfeatured.util.preferences.PrefUtils.isVpnActive
@@ -2995,7 +2996,7 @@ else{
             R.id.img_dashboard -> {
                 (activity as MainActivity)?.binding!!.layout.txtAnnouncementCount.visibility =
                     View.GONE
-                replaceFragment(DashboardFragment(), R.id.flFragment, true)
+                replaceFragment(DashboardTesting(), R.id.flFragment, true)
             }
 
             R.id.img_calender -> {

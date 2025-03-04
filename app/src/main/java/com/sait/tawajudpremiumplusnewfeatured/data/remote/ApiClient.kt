@@ -41,10 +41,10 @@ object ApiClient {
     lateinit var baseUrl: String
     private var connection: HttpsURLConnection? = null
 
-    private var BASE_URL = "https://sgi.software/SmartRegister2.0/api/"
+   private var BASE_URL = "https://sgi.software/SmartRegister2.0/api/"
 
     //private var BASE_URL = "https://sgi.software/SmartRegister/api/"
-    //private var BASE_URL = "https://sgi.software/SmartRegister_Dev/api/"
+   // private var BASE_URL = "https://sgi.software/SmartRegister_Dev/api/"
 
     fun init() {
         baseUrl = BASE_URL
@@ -129,11 +129,6 @@ object ApiClient {
 
         override fun intercept(chain: Interceptor.Chain): Response {
             var request = chain.request()
-            // Capture request details
-            val requestLog = buildRequestLog(request)
-
-            // Log request in a pretty format
-            Log.d("API Request", requestLog)
 
             if (request.header("No-Authentication") == null) {
                // val token = Prefs.getString(PrefKeys.Auth_key, "")
@@ -146,6 +141,10 @@ object ApiClient {
                     Log.e("finalToken", finalToken)
                 }
             }
+            // Capture request details
+            val requestLog = buildRequestLog(request)
+            // Log request in a pretty format
+            Log.d("API Request", requestLog)
             val response = chain.proceed(request)
             // Clone response body for logging
             val responseBody = response.body
