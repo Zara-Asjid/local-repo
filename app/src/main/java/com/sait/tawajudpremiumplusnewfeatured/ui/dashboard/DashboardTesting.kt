@@ -1,33 +1,50 @@
 package com.sait.tawajudpremiumplusnewfeatured.ui.dashboard
 
+import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayout
 import com.sait.tawajudpremiumplusnewfeatured.MainActivity
 import com.sait.tawajudpremiumplusnewfeatured.R
 import com.sait.tawajudpremiumplusnewfeatured.core.BaseFragment
-import com.sait.tawajudpremiumplusnewfeatured.databinding.FragmentReportsBinding
+import com.sait.tawajudpremiumplusnewfeatured.databinding.FragmentDashboardAllBinding
 import com.sait.tawajudpremiumplusnewfeatured.util.preferences.UserShardPrefrences
 
-class DashboardTesting: BaseFragment(), View.OnClickListener {
+class DashboardTesting : BaseFragment(), View.OnClickListener {
 
-    private var _binding: FragmentReportsBinding? = null
+    private var _binding: FragmentDashboardAllBinding? = null
     private val binding get() = _binding!!
     private var mContext: Context? = null
 
-    private var currentFragmentTag: String? = null
-    private val childFragManager by lazy { childFragmentManager }
+    private lateinit var customViewPager: CustomViewPager
+
+    private val fragments: List<Fragment> = listOf(
+        DashboardFragment_self(),
+        DashboardFragment_Manager(),
+        DashboardFragment_Admin()
+    )
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentReportsBinding.inflate(inflater, container, false)
+    ): View {
+        _binding = FragmentDashboardAllBinding.inflate(inflater, container, false)
         mContext = inflater.context
 
+        customViewPager = binding.customViewPager.apply {
+            setUp(childFragmentManager, R.id.customViewPager, fragments)  // Use customViewPager as the container
+            tabChangeListener = { position ->
+                binding.tabLayout.getTabAt(position)?.select()
+            }
+        }
+
         setTabLayout()
+        setClickListeners(activity)
+
         return binding.root
     }
 
@@ -43,49 +60,21 @@ class DashboardTesting: BaseFragment(), View.OnClickListener {
 
             addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
                 override fun onTabSelected(tab: TabLayout.Tab?) {
-                    tab?.let { loadFragment(it.position) }
+                    tab?.let {
+                        customViewPager.navigateTo(it.position)
+                    }
                 }
 
                 override fun onTabUnselected(tab: TabLayout.Tab?) {}
                 override fun onTabReselected(tab: TabLayout.Tab?) {}
             })
         }
-
-        // Load first tab by default
-        loadFragment(0)
     }
 
-    private fun loadFragment(position: Int) {
-        val fragmentTag = when (position) {
-            0 -> "SelfFragment"
-            1 -> "ManagerFragment"
-            2 -> "AdminFragment"
-            else -> return
-        }
-
-        // Prevent reloading the same fragment
-        if (currentFragmentTag == fragmentTag) return
-
-        val fragment = when (position) {
-            0 -> DashboardFragment_self()
-            1 -> DashboardFragment_Manager()
-            2 -> DashboardFragment_Admin()
-            else -> return
-        }
-
-        val transaction = childFragManager.beginTransaction()
-        childFragManager.fragments.forEach { transaction.hide(it) } // Hide previous fragments
-
-        // Check if fragment exists, otherwise add it
-        val existingFragment = childFragManager.findFragmentByTag(fragmentTag)
-        if (existingFragment != null) {
-            transaction.show(existingFragment)
-        } else {
-            transaction.add(R.id.fragmentContainer, fragment, fragmentTag)
-        }
-
-        transaction.commit()
-        currentFragmentTag = fragmentTag
+    @SuppressLint("ClickableViewAccessibility")
+    private fun setClickListeners(activity: Activity?) {
+        val mainActivity = activity as? MainActivity
+        mainActivity?.binding?.layout?.imgBack?.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
