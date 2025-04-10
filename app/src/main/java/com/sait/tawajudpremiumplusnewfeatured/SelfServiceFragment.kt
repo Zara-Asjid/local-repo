@@ -12,7 +12,7 @@ import com.google.android.material.tabs.TabLayout
 import com.sait.tawajudpremiumplusnewfeatured.core.BaseFragment
 import com.sait.tawajudpremiumplusnewfeatured.databinding.FragmentSelfServiceBinding
 import com.sait.tawajudpremiumplusnewfeatured.ui.requests.RequestsFragment
-import com.sait.tawajudpremiumplusnewfeatured.ui.violations.ViolationsFragment
+import com.sait.tawajudpremiumplusnewfeatured.ui.violations.ViolationsFragmentTesting
 import com.sait.tawajudpremiumplusnewfeatured.ui.violations.ViolationsPendingFragment
 import com.sait.tawajudpremiumplusnewfeatured.util.GlobalVariables
 import com.sait.tawajudpremiumplusnewfeatured.util.extension.hasInternetConnection
@@ -99,8 +99,10 @@ class SelfServiceFragment : BaseFragment() , View.OnClickListener {
 */
         GlobalVariables.updateRequest = false
 
-        adapter!!.addFragment(ViolationsFragment(), resources.getString(R.string.violations))
+        adapter!!.addFragment(ViolationsFragmentTesting(), resources.getString(R.string.violations))
         adapter!!.addFragment(ViolationsPendingFragment(), resources.getString(R.string.applied))
+//        adapter!!.addFragment(ViolationsPendingFragmentTest(), resources.getString(R.string.applied))
+
         adapter!!.addFragment(RequestsFragment(), resources.getString(R.string.requests))
 
 

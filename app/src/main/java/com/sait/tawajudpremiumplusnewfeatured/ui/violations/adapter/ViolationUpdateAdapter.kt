@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.sait.tawajudpremiumplusnewfeatured.R
 import com.sait.tawajudpremiumplusnewfeatured.databinding.RowViolationUpdateitemBinding
 import com.sait.tawajudpremiumplusnewfeatured.ui.changelanguage.LocaleHelper
-import com.sait.tawajudpremiumplusnewfeatured.ui.violations.listener.ViolationItemClickListener
+import com.sait.tawajudpremiumplusnewfeatured.ui.violations.ViolationsPendingFragment
 import com.sait.tawajudpremiumplusnewfeatured.ui.violations.models.ViolationData
 import com.sait.tawajudpremiumplusnewfeatured.util.DateTime_Op
 import com.sait.tawajudpremiumplusnewfeatured.util.preferences.UserShardPrefrences
@@ -29,7 +29,7 @@ import java.util.*
 
 class ViolationUpdateAdapter(
     private var violationList: ArrayList<ViolationData>,
-    private val violationItemClickListener: ViolationItemClickListener,
+    private val violationItemClickListener: ViolationsPendingFragment,
     private var mContext: Context
 
 ) : RecyclerView.Adapter<ViolationUpdateAdapter.ViewHolder>() {

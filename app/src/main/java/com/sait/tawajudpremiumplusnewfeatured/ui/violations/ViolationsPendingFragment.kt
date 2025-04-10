@@ -49,6 +49,7 @@ class ViolationsPendingFragment() : BaseFragment(), ViolationItemClickListener, 
     private var fromRefresh = false
     private lateinit var bundle: Bundle
     var handler: Handler = Handler()
+    private var isApiCalled = false // Flag to track if the API has been called before
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -65,14 +66,18 @@ class ViolationsPendingFragment() : BaseFragment(), ViolationItemClickListener, 
         /*  if (flag == true){
               restoreState()
           }*/
+
         setDate()
         setClickListeners()
         if(UserShardPrefrences.getLanguage(mContext).equals("1")){
             (activity as MainActivity).binding.layout.imgBack.rotation = 180f
         }
-
+// Only call the API if it's the first time or on refresh
+        if (!isApiCalled) {
+            init()
+            isApiCalled = true
+        }
         // callViolationsAPI()
-        init()
 
         return binding.root
     }
