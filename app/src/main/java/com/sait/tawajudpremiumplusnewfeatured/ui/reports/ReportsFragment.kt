@@ -19,144 +19,92 @@ import com.sait.tawajudpremiumplusnewfeatured.util.GlobalVariables
 import com.sait.tawajudpremiumplusnewfeatured.util.extension.hasInternetConnection
 import com.sait.tawajudpremiumplusnewfeatured.util.preferences.UserShardPrefrences
 
-
-class ReportsFragment : BaseFragment() , View.OnClickListener {
+class ReportsFragment : BaseFragment(), View.OnClickListener {
 
     private var _binding: FragmentReportsBinding? = null
     private val binding get() = _binding!!
     private var mContext: Context? = null
-    var handler: Handler = Handler()
+    private var handler: Handler = Handler()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
-
         _binding = FragmentReportsBinding.inflate(inflater, container, false)
-        val activity = this.activity as MainActivity?
         mContext = inflater.context
-        if(UserShardPrefrences.getLanguage(mContext).equals("1")){
-            (activity as MainActivity).binding.layout.imgBack.rotation = 180f
+
+        val activity = this.activity as MainActivity?
+        if (UserShardPrefrences.getLanguage(mContext).equals("1")) {
+            activity?.binding?.layout?.imgBack?.rotation = 180f
         }
 
         setClickListeners(activity)
         setAdapters()
 
-
         return binding.root
-    }
-
-
-    override fun onPause() {
-        super.onPause()
-
     }
 
     override fun onResume() {
         super.onResume()
-        (activity as MainActivity).show_BackButton()
-        (activity as MainActivity).hide_alert()
-        (activity as MainActivity).hide_info()
-        (activity as MainActivity).hide_userprofile()
-        (activity as MainActivity).show_app_title(mContext!!.resources.getString(R.string.reports_txt))
+        val activity = this.activity as MainActivity
+        activity.show_BackButton()
+        activity.hide_alert()
+        activity.hide_info()
+        activity.hide_userprofile()
+        activity.show_app_title(mContext!!.getString(R.string.reports_txt))
+
         if (GlobalVariables.from_background) {
+            GlobalVariables.from_background = false
             handler.post(checkInternetRunnable)
         }
     }
+
     private val checkInternetRunnable = object : Runnable {
         @RequiresApi(Build.VERSION_CODES.M)
         override fun run() {
             val application = requireActivity().application as TawajudApplication
-
             if (application.hasInternetConnection()) {
                 onRefresh()
             } else {
-                // Repeat the check after 1 second if there is no internet connection
                 handler.postDelayed(this, 1000)
             }
         }
     }
 
-
     private fun onRefresh() {
-
+        // Your refresh logic here
     }
-
 
     private fun setAdapters() {
         val adapter = activity?.let { ViewPagerAdapter(it.supportFragmentManager) }
 
+        adapter?.addFragment(Reports_SelfFragment(), mContext!!.getString(R.string.self_reports))
 
-        adapter!!.addFragment(Reports_SelfFragment(), mContext!!.resources.getString(R.string.self_reports))
-
-        if(UserShardPrefrences.getisManager(mContext)){
-            adapter!!.addFragment(Reports_ManagerFragment(), mContext!!.resources.getString(R.string.manager_reports))
+        if (UserShardPrefrences.getisManager(mContext)) {
+            adapter?.addFragment(Reports_ManagerFragment(), mContext!!.getString(R.string.manager_reports))
         }
 
-//UserShardPrefrences.getisHRAdmin(mContext)
-        if(UserShardPrefrences.getisAdmin(mContext)){
-            adapter!!.addFragment(Reports_AdminFragment(), mContext!!.resources.getString(R.string.admin_reports))
+        if (UserShardPrefrences.getisAdmin(mContext)) {
+            adapter?.addFragment(Reports_AdminFragment(), mContext!!.getString(R.string.admin_reports))
         }
 
         binding.pager.adapter = adapter
         binding.tabLayout.setupWithViewPager(binding.pager)
 
-
         binding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
-                // Handle tab selected event
-                if(tab!!.position.equals(1)){
-                    // Handle tab selection
-                    val selectedPosition = tab.position
-
-                    // Get the existing fragment at the selected position
-                    val selectedFragment = adapter.getItem(selectedPosition)
-
-                    // Detach the existing fragment
-                    fragmentManager!!.beginTransaction().detach(selectedFragment).commit()
-
-                    // Perform any cleanup or additional logic if needed
-
-                    // Attach the fragment back
-                    fragmentManager!!.beginTransaction().attach(selectedFragment).commit()
-
-                }
+                // No need to detach/attach fragments here
             }
 
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-                // Handle tab unselected event
-            }
-
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-                // Handle tab reselected event
-
-            }
+            override fun onTabUnselected(tab: TabLayout.Tab?) {}
+            override fun onTabReselected(tab: TabLayout.Tab?) {}
         })
-
-
-
-
     }
 
-
     private fun setClickListeners(activity: MainActivity?) {
-
-
-        activity?.binding!!.layout.imgBack.setOnClickListener(this)
-
+        activity?.binding?.layout?.imgBack?.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
-
-        when(v?.id){
-
+        when (v?.id) {
             R.id.img_back -> (activity as MainActivity).onBackPressed()
-
-
-
+        }
     }
-
-}
-
-
-
-
 }
